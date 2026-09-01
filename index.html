@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Auditoria Operacional — Degustações Agrícola Famosa × BeMore | 75 LAB</title>
+<meta name="description" content="Auditoria documental da operação de degustações Agrícola Famosa executada pela BeMore (22/07 a 01/09/2026): registro de faltas, provas e resumo macro para decisão.">
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:title" content="Auditoria Operacional — Degustações Agrícola Famosa × BeMore">
+<meta property="og:description" content="61 ocorrências documentadas, 16 dias-degustadora comprometidos, 0 faltas declaradas nos relatórios oficiais.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --lime:#C0EE4E; --lime-d:#A6D934; --lime-l:#EAFBC0;
+  --teal:#00837D; --ink:#0E1110; --ink2:#54594E; --ink3:#9AA08F; --rule:#E3E7DA;
+  --paper:#FFFFFF; --bg:#F6F7F2;
+  --crit:#D6303C; --crit-bg:#FDECEE; --alta:#E07A0C; --alta-bg:#FDF2E3;
+  --med:#8A8F31; --med-bg:#F4F6E2; --baixa:#6B7280; --baixa-bg:#F1F2F4;
+  --maxw:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:74px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Lexend,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:300;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{margin:0;font-weight:400;line-height:1.12;letter-spacing:-.015em}
+p{margin:0 0 1em}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{font-family:Anton,sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:12px;color:var(--teal)}
+.num{font-family:Anton,sans-serif;letter-spacing:.01em;font-variant-numeric:tabular-nums}
+
+/* NAV */
+nav.top{position:sticky;top:0;z-index:50;background:rgba(14,17,16,.96);backdrop-filter:blur(8px);border-bottom:1px solid #23271f}
+nav.top .wrap{display:flex;align-items:center;gap:22px;height:58px;overflow-x:auto;scrollbar-width:none}
+nav.top .wrap::-webkit-scrollbar{display:none}
+nav.top .brand{font-family:Anton,sans-serif;color:var(--lime);font-size:14px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+nav.top a{color:#C9CEC2;text-decoration:none;font-size:13px;white-space:nowrap;font-weight:300;padding:4px 0;border-bottom:2px solid transparent}
+nav.top a:hover{color:#fff;border-color:var(--lime)}
+
+/* HERO */
+header.hero{background:var(--ink);color:#fff;padding:64px 0 0;position:relative;overflow:hidden}
+header.hero:after{content:"";position:absolute;inset:auto -10% -60% 55%;height:520px;background:radial-gradient(closest-side,rgba(192,238,78,.14),transparent 70%)}
+.hero .tag{display:inline-flex;align-items:center;gap:8px;background:rgba(214,48,60,.16);border:1px solid rgba(214,48,60,.5);color:#FF8A93;font-size:12px;font-family:Anton,sans-serif;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:22px}
+.hero h1{font-size:clamp(34px,5.4vw,62px);font-weight:200;text-transform:uppercase;max-width:16ch}
+.hero h1 b{font-weight:600;color:var(--lime)}
+.hero .sub{color:#B9BFB2;max-width:62ch;margin-top:20px;font-size:17px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:0;margin:40px 0 0;border-top:1px solid #262b23}
+.hero .meta div{flex:1 1 200px;padding:18px 20px 22px;border-right:1px solid #262b23}
+.hero .meta div:last-child{border-right:0}
+.hero .meta .k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);font-family:Anton,sans-serif}
+.hero .meta .v{font-size:15px;color:#fff;margin-top:6px}
+
+/* VEREDICTO */
+.verdict{background:linear-gradient(180deg,var(--ink) 0%, var(--ink) 50%, transparent 50%)}
+.verdict .card{background:var(--lime);color:var(--ink);border-radius:4px;padding:34px 36px;display:grid;grid-template-columns:1.1fr 1fr;gap:34px}
+.verdict h2{font-size:clamp(22px,2.6vw,30px);font-weight:200;text-transform:uppercase}
+.verdict h2 b{font-weight:600}
+.verdict p{font-size:15px;color:#1c2119;margin:14px 0 0}
+.verdict ul{margin:0;padding-left:0;list-style:none;font-size:14.5px}
+.verdict ul li{padding:11px 0;border-bottom:1px solid rgba(14,17,16,.16);display:flex;gap:12px;align-items:baseline}
+.verdict ul li:last-child{border-bottom:0}
+.verdict ul li span.n{font-family:Anton,sans-serif;font-size:22px;min-width:64px}
+
+/* SECTIONS */
+section{padding:72px 0}
+section.alt{background:var(--paper)}
+.shead{max-width:70ch;margin-bottom:34px}
+.shead h2{font-size:clamp(26px,3.4vw,40px);font-weight:200;text-transform:uppercase;margin-top:10px}
+.shead h2 b{font-weight:600}
+.shead p{color:var(--ink2);margin-top:14px;font-size:16px}
+
+/* KPI */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.kpi{background:var(--paper);padding:24px 22px 26px}
+.kpi .n{font-family:Anton,sans-serif;font-size:clamp(34px,4.6vw,52px);line-height:1;color:var(--ink)}
+.kpi .n.red{color:var(--crit)}
+.kpi .n small{font-size:.42em;letter-spacing:.02em;color:var(--ink3);margin-left:4px}
+.kpi .l{font-size:13.5px;color:var(--ink2);margin-top:10px;line-height:1.42}
+.kpi .s{font-size:11.5px;color:var(--ink3);margin-top:8px;border-top:1px solid var(--rule);padding-top:8px}
+
+/* GENERIC CARDS */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--paper);border:1px solid var(--rule);border-radius:3px;padding:24px}
+.card h3{font-size:17px;font-weight:500;margin-bottom:10px}
+.card p{font-size:14.5px;color:var(--ink2);margin:0}
+.card.dark{background:var(--ink);color:#fff;border-color:var(--ink)}
+.card.dark p{color:#B9BFB2}
+.card.lime{background:var(--lime-l);border-color:var(--lime-d)}
+
+/* TABELA REGISTRO */
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:18px}
+.filters .lbl{font-family:Anton,sans-serif;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);margin-right:4px}
+.chip{border:1px solid var(--rule);background:var(--paper);border-radius:999px;padding:7px 14px;font-size:12.5px;cursor:pointer;font-family:Lexend,sans-serif;color:var(--ink2);transition:.15s}
+.chip:hover{border-color:var(--ink3)}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.chip.on.crit{background:var(--crit);border-color:var(--crit)}
+#busca{flex:1 1 220px;min-width:180px;border:1px solid var(--rule);border-radius:999px;padding:8px 16px;font-family:Lexend,sans-serif;font-size:13px;background:var(--paper);color:var(--ink)}
+#busca:focus{outline:2px solid var(--lime-d);outline-offset:1px}
+.contador{font-size:12.5px;color:var(--ink3);margin-bottom:14px}
+.occ{background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--rule);margin-bottom:10px;padding:18px 22px;border-radius:0 3px 3px 0}
+.occ[data-g="Crítica"]{border-left-color:var(--crit)}
+.occ[data-g="Alta"]{border-left-color:var(--alta)}
+.occ[data-g="Média"]{border-left-color:var(--med)}
+.occ[data-g="Baixa"]{border-left-color:var(--baixa)}
+.occ .l1{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:9px}
+.occ .d{font-family:Anton,sans-serif;font-size:13px;letter-spacing:.06em}
+.occ .badge{font-size:10.5px;font-family:Anton,sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:3px}
+.b-crit{background:var(--crit-bg);color:var(--crit)}
+.b-alta{background:var(--alta-bg);color:var(--alta)}
+.b-med{background:var(--med-bg);color:var(--med)}
+.b-baixa{background:var(--baixa-bg);color:var(--baixa)}
+.occ .tipo{font-size:12px;color:var(--ink2);border:1px solid var(--rule);padding:3px 9px;border-radius:3px}
+.occ .loja{font-size:12.5px;color:var(--ink3)}
+.occ .fato{font-size:14.5px;color:var(--ink);margin:0 0 12px}
+.occ blockquote{margin:0;padding:11px 16px;background:var(--bg);border-left:2px solid var(--lime-d);font-size:14px;color:var(--ink2);font-style:italic}
+.occ blockquote cite{display:block;font-style:normal;font-size:11.5px;color:var(--ink3);margin-top:7px;letter-spacing:.02em}
+.occ .pv{display:inline-flex;align-items:center;gap:6px;margin-top:11px;font-size:12px;color:var(--teal);text-decoration:none;border-bottom:1px solid rgba(0,131,125,.3)}
+
+/* PROVAS */
+.provas{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.prova{background:var(--paper);border:1px solid var(--rule);border-radius:3px;overflow:hidden;display:flex;flex-direction:column}
+.prova .imgbox{background:#EDEFE8;height:250px;overflow:hidden;border-bottom:1px solid var(--rule)}
+.prova img{width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block;cursor:zoom-in}
+.prova .imgbox.shot img{object-fit:contain;object-position:center;padding:10px}
+.prova.wide .imgbox{height:210px}
+.prova .cap{padding:16px 18px 20px}
+.prova .cap .dt{font-family:Anton,sans-serif;font-size:11.5px;letter-spacing:.1em;color:var(--crit)}
+.prova .cap h4{font-size:15px;font-weight:500;margin:7px 0 8px}
+.prova .cap p{font-size:13px;color:var(--ink2);margin:0}
+.prova.wide{grid-column:span 2}
+#lb{position:fixed;inset:0;background:rgba(10,12,10,.94);display:none;align-items:center;justify-content:center;z-index:100;padding:28px;cursor:zoom-out}
+#lb img{max-width:100%;max-height:92vh;object-fit:contain}
+#lb.on{display:flex}
+
+/* COMPARATIVO */
+.tb{width:100%;border-collapse:collapse;font-size:14px;background:var(--paper)}
+.tb th{font-family:Anton,sans-serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:13px 14px;border-bottom:2px solid var(--ink);color:var(--ink);font-weight:400}
+.tb td{padding:14px;border-bottom:1px solid var(--rule);color:var(--ink2);vertical-align:top}
+.tb td.n{font-family:Anton,sans-serif;font-size:19px;color:var(--ink);text-align:center}
+.tb td.n.bad{color:var(--crit)}
+.tb tr:last-child td{border-bottom:0}
+.scrollx{overflow-x:auto;border:1px solid var(--rule)}
+
+/* CLÁUSULAS */
+.cl{background:var(--paper);border:1px solid var(--rule);border-radius:3px;padding:24px;margin-bottom:14px}
+.cl .id{font-family:Anton,sans-serif;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase}
+.cl .st{display:inline-block;font-size:11px;font-family:Anton,sans-serif;letter-spacing:.09em;text-transform:uppercase;padding:3px 9px;border-radius:3px;background:var(--crit-bg);color:var(--crit);margin-left:10px;vertical-align:2px}
+.cl .st.ok{background:var(--lime-l);color:#4C6B00}
+.cl .txt{font-size:14px;color:var(--ink2);font-style:italic;margin:13px 0;padding-left:14px;border-left:2px solid var(--rule)}
+.cl .ev{font-size:14px;color:var(--ink)}
+
+/* CALCULADORA */
+.calc{background:var(--ink);color:#fff;border-radius:4px;padding:34px}
+.calc h3{font-family:Anton,sans-serif;font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:var(--lime)}
+.calc .row{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;margin:22px 0 26px}
+.calc label{display:block;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;font-family:Anton,sans-serif;color:var(--ink3);margin-bottom:8px}
+.calc input{background:#191d18;border:1px solid #2c322a;color:#fff;padding:12px 14px;border-radius:3px;font-family:Lexend,sans-serif;font-size:16px;width:220px}
+.calc input:focus{outline:2px solid var(--lime);outline-offset:0}
+.calc .out{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#2c322a;border:1px solid #2c322a}
+.calc .out div{background:#131711;padding:20px}
+.calc .out .k{font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;font-family:Anton,sans-serif;color:var(--ink3)}
+.calc .out .v{font-family:Anton,sans-serif;font-size:29px;margin-top:8px;color:#fff}
+.calc .out div.hl .v{color:var(--lime)}
+.calc .nota{font-size:12.5px;color:#9AA08F;margin-top:18px}
+
+/* AÇÕES */
+.act{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--rule);align-items:flex-start}
+.act:last-child{border-bottom:0}
+.act .i{font-family:Anton,sans-serif;font-size:14px;background:var(--ink);color:var(--lime);min-width:34px;height:34px;display:flex;align-items:center;justify-content:center;border-radius:3px;flex:0 0 34px}
+.act h4{font-size:16px;font-weight:500;margin-bottom:6px}
+.act p{font-size:14px;color:var(--ink2);margin:0}
+.act .pz{font-size:11px;font-family:Anton,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--teal);margin-top:8px;display:block}
+
+/* ANEXOS */
+.files{columns:2;column-gap:28px;font-size:13.5px;color:var(--ink2)}
+.files li{break-inside:avoid;padding:7px 0;border-bottom:1px solid var(--rule);list-style:none}
+.files code{font-size:12px;color:var(--ink3)}
+
+footer{background:var(--ink);color:#8E9487;padding:48px 0;font-size:13px}
+footer .brand{font-family:Anton,sans-serif;color:var(--lime);letter-spacing:.14em;font-size:15px;text-transform:uppercase}
+footer a{color:#C9CEC2}
+.lgpd{background:#191d18;border:1px solid #2c322a;border-radius:3px;padding:18px 20px;margin-top:24px;font-size:12.5px;color:#9AA08F}
+
+@media(max-width:900px){
+  .verdict .card{grid-template-columns:1fr}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .grid2,.grid3,.provas{grid-template-columns:1fr}
+  .prova.wide{grid-column:span 1}
+  .calc .out{grid-template-columns:1fr}
+  .files{columns:1}
+  .hero .meta div{border-right:0;border-bottom:1px solid #262b23}
+}
+@media print{
+  nav.top{display:none} section{padding:24px 0;break-inside:avoid} body{background:#fff}
+}
+</style>
+</head>
+<body>
+
+<nav class="top"><div class="wrap">
+  <span class="brand">75 LAB · Auditoria</span>
+  <a href="#panorama">Panorama</a>
+  <a href="#pactuado">O que foi pactuado</a>
+  <a href="#registro">Registro de faltas</a>
+  <a href="#provas">Provas visuais</a>
+  <a href="#relatorios">Relatório × Campo</a>
+  <a href="#contrato">Contrato</a>
+  <a href="#macro">Resumo macro</a>
+  <a href="#acoes">Ações</a>
+  <a href="#anexos">Anexos</a>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="tag">● Documento interno · Uso restrito</span>
+    <h1>Auditoria operacional <b>Degustações Agrícola Famosa</b></h1>
+    <p class="sub">Apuração documental integral do piloto executado pela <b>BeMore Action</b> sob gestão da <b>75 LAB</b> para a <b>Agrícola Famosa</b>. Este relatório consolida, com data, hora e autoria, todas as faltas, atrasos, abandonos de posto e falhas de reporte registradas ao longo da operação — e as confronta com o que a BeMore declarou em seus relatórios oficiais.</p>
+    <div class="meta">
+      <div><div class="k">Período auditado</div><div class="v">22/07 a 01/09/2026 · 30 dias operacionais</div></div>
+      <div><div class="k">Escopo</div><div class="v">5 PDVs · 5 degustadoras · terça a sábado · 09h–18h</div></div>
+      <div><div class="k">Base documental</div><div class="v">1.150 mensagens · 4 relatórios · 21 evidências</div></div>
+      <div><div class="k">Emissão</div><div class="v">01/09/2026 · 75 LAB Estratégia, Design e Produção</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="verdict"><div class="wrap"><div class="card">
+  <div>
+    <h2>Conclusão da <b>auditoria</b></h2>
+    <p>A operação não atingiu, em nenhuma semana do período, a cobertura contratada de 5 postos ativos das 09h às 18h. As falhas não foram pontuais nem majoritariamente externas: são recorrentes, concentradas na gestão de pessoas e de comunicação da BeMore, e — este é o ponto mais grave — <b>não constam dos relatórios oficiais entregues ao cliente</b>.</p>
+    <p>A 75 LAB absorveu o custo de mitigação: rotas presenciais de fiscalização, reposição de material em campo, gestão de crise com a diretoria da Agrícola Famosa e criação de um protocolo antifraude de comprovação de presença. Há fundamento contratual e factual para pleito de glosa e revisão do modelo antes da continuidade.</p>
+  </div>
+  <div>
+    <ul>
+      <li><span class="n">61</span><div>ocorrências documentadas, sendo <b>20 críticas</b></div></li>
+      <li><span class="n">16</span><div>dias-degustadora comprometidos — <b>10,7% do escopo contratado</b></div></li>
+      <li><span class="n">0</span><div>faltas declaradas pela BeMore em <b>todos</b> os relatórios oficiais</div></li>
+      <li><span class="n">100%</span><div>das rotas de auditoria presencial encontraram ao menos um PDV sem degustadora</div></li>
+    </ul>
+  </div>
+</div></div></div>
+
+<!-- PANORAMA -->
+<section id="panorama">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">01 · Panorama</span>
+      <h2>Os números que <b>sustentam a reclamação</b></h2>
+      <p>Todos os indicadores abaixo são extraídos de registros datados: mensagens do grupo oficial do projeto, Status Days emitidos pela própria BeMore e relatórios .xlsx entregues formalmente à 75 LAB.</p>
+    </div>
+
+    <div class="kpis">
+      <div class="kpi"><div class="n red">61</div><div class="l">Ocorrências operacionais documentadas em 30 dias de operação</div><div class="s">≈ 2 ocorrências por dia útil</div></div>
+      <div class="kpi"><div class="n red">20</div><div class="l">Classificadas como críticas — posto descoberto, cliente impactado ou inadimplência trabalhista</div><div class="s">33% do total</div></div>
+      <div class="kpi"><div class="n">16<small>/150</small></div><div class="l">Dias-degustadora comprometidos sobre os 150 previstos (30 dias × 5 postos)</div><div class="s">12 confirmados + 4 constatados por terceiros</div></div>
+      <div class="kpi"><div class="n red">0</div><div class="l">Faltas registradas na categoria “Falta / ausência” dos relatórios da BeMore</div><div class="s">Contra 16 documentadas em campo</div></div>
+
+      <div class="kpi"><div class="n">16<small>de 16</small></div><div class="l">Check-ins auditados nos Status Days ocorreram <b>após</b> o horário contratual de 09h</div><div class="s">Nenhum registro pontual em 4 dias amostrados</div></div>
+      <div class="kpi"><div class="n">28<small>min</small></div><div class="l">Atraso médio de entrada por degustadora nos dias com registro de check-in</div><div class="s">7h36 de operação perdida só nos 4 dias amostrados</div></div>
+      <div class="kpi"><div class="n red">11</div><div class="l">Profissionais diferentes ocuparam os 5 postos, com 4 desistências formais</div><div class="s">≈ 220% de rotatividade em 6 semanas</div></div>
+      <div class="kpi"><div class="n red">2</div><div class="l">Semanas consecutivas de inadimplência trabalhista (VT em 21/08, salário em 28/08)</div><div class="s">Gerou ausência coletiva em loja</div></div>
+    </div>
+
+    <div class="grid3" style="margin-top:22px">
+      <div class="card dark">
+        <h3 style="color:var(--lime)">O cliente descobriu antes de nós</h3>
+        <p>Em ao menos <b>6 episódios</b> a Agrícola Famosa constatou a falha em loja e comunicou a 75 LAB — e não o contrário. Em 22/07 a ausência de uma degustadora só chegou ao conhecimento da agência 7 horas depois, por ligação do cliente.</p>
+      </div>
+      <div class="card">
+        <h3>A fiscalização virou pré-requisito</h3>
+        <p>Foram necessárias rotas presenciais da 75 LAB para obter informação de campo. Em <b>3 de 3</b> rotas (23/07, 01/08 e 06/08) ao menos um PDV foi encontrado sem degustadora — em 01/08, três PDVs no mesmo dia.</p>
+      </div>
+      <div class="card lime">
+        <h3>Controle antifraude a partir da 5ª semana</h3>
+        <p>Em 25/08 a 75 LAB instituiu uma <b>“senha da semana”</b> a ser exibida nas fotos diárias para atestar que o registro era do dia. É a evidência mais direta de que a comprovação de presença fornecida pela BeMore deixou de ser confiável.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACTUADO -->
+<section id="pactuado" class="alt">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">02 · Linha de base</span>
+      <h2>O que foi <b>pactuado</b></h2>
+      <p>Sem uma linha de base explícita não há falta a apurar. Os parâmetros abaixo constam do PMO de kick-off, do cronograma de treinamento e do contrato — todos anexos a este dossiê.</p>
+    </div>
+    <div class="scrollx">
+      <table class="tb">
+        <tr><th style="width:26%">Parâmetro</th><th style="width:34%">Pactuado</th><th>Fonte</th></tr>
+        <tr><td><b>Head count</b></td><td>5 degustadoras em campo, 1 por PDV</td><td>Mensagem de boas-vindas do projeto (25/06) e PMO de kick-off</td></tr>
+        <tr><td><b>Jornada</b></td><td>09h00 às 18h00, com 1 hora de almoço</td><td>PMO_KICK OFF_Agricola_Julho_26.xlsb — item 2.0</td></tr>
+        <tr><td><b>Escala</b></td><td>Terça a sábado · 30 dias de ação · 1º dia de treinamento presencial</td><td>PMO de kick-off e mensagem de abertura do grupo</td></tr>
+        <tr><td><b>Roteiro final</b></td><td>Sonda Água Branca · Carrefour Imigrantes · Vila das Frutas (Cerro Corá) · Extra Ricardo Jafet · Sonda Vila Guilherme</td><td>Listagem oficial 20/07, revisada em 28/07</td></tr>
+        <tr><td><b>Uniforme padrão</b></td><td>Máscara · Luva · <b>Touca branca</b> · Avental Melão Famosa · Bandeja</td><td>Slide “Uniforme correto” enviado pela 75 LAB em 23/07</td></tr>
+        <tr><td><b>Insumos fornecidos</b></td><td>6 bandejas · 11 aventais · 26 camisas · 20 toucas · 2.200 palitos · 12 faixas · 10 eco-bags · 5 facas · 2 caixas de máscara · 1 caixa de luvas</td><td>Inventário de Materiais assinado pela BeMore em 17/07</td></tr>
+        <tr><td><b>Treinamento</b></td><td>21/07, presencial, com módulos de conduta (RH BeMore) e de sistema (Operação)</td><td>Cronograma_Treinamento_Agricola_Famosa_BeMore_21-07-2026.pdf</td></tr>
+        <tr><td><b>Reporte de ausências</b></td><td>Até as 10h do dia, por exigência formal do cliente em 22/07</td><td>Mensagem do cliente reproduzida no grupo</td></tr>
+        <tr><td><b>Anormalidades</b></td><td>Ciência “imediata e por escrito” ao contratante</td><td>Contrato — Cláusula Quinta, alínea “b”</td></tr>
+      </table>
+    </div>
+    <div class="card" style="margin-top:20px;border-left:4px solid var(--crit)">
+      <h3>A cláusula que faltou</h3>
+      <p>Em <b>26/06/2026</b>, antes da assinatura, a 75 LAB solicitou formalmente a inclusão de cláusula de substituição de profissionais e SLA operacional: <i>“em caso de ausência, atraso, conduta inadequada ou solicitação justificada da 75LAB, a Bemore deverá providenciar substituição em prazo compatível com a operação, sem custo adicional quando a necessidade decorrer de falha da equipe alocada”</i>. A minuta em anexo não contém a cláusula. O risco antecipado pela agência materializou-se integralmente — e sem SLA nem multa, a operação ficou sem mecanismo automático de correção.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTRO -->
+<section id="registro">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">03 · Registro</span>
+      <h2>Registro de <b>faltas e ocorrências</b></h2>
+      <p>Cada item traz o fato apurado e a citação literal do registro de origem, com autoria, data e hora exatas conforme o export do grupo oficial do projeto. Use os filtros para isolar faltas, atrasos, abandono de posto ou apenas as ocorrências críticas.</p>
+    </div>
+
+    <div class="filters">
+      <span class="lbl">Gravidade</span>
+      <button class="chip on" data-f="g" data-v="todas">Todas</button>
+      <button class="chip crit" data-f="g" data-v="Crítica">Críticas</button>
+      <button class="chip" data-f="g" data-v="Alta">Altas</button>
+      <button class="chip" data-f="g" data-v="Média">Médias</button>
+    </div>
+    <div class="filters">
+      <span class="lbl">Tipo</span>
+      <span id="tipos"></span>
+      <input id="busca" type="search" placeholder="Buscar por loja, data, palavra…" aria-label="Buscar no registro">
+    </div>
+    <div class="contador" id="contador"></div>
+    <div id="lista"></div>
+  </div>
+</section>
+
+<!-- PROVAS -->
+<section id="provas" class="alt">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">04 · Evidências</span>
+      <h2>Provas <b>visuais</b></h2>
+      <p>Imagens extraídas do grupo oficial do projeto, na data e hora indicadas. Nomes completos, números de telefone e rostos de colaboradoras foram tarjados por proteção de dados — os elementos probatórios (horários, status, PDV vazio, uniforme, texto das mensagens) permanecem íntegros. Clique para ampliar.</p>
+    </div>
+
+    <div class="provas">
+      <div class="prova">
+        <div class="imgbox shot"><img src="evidencias/status-day-23-07.jpg" alt="Status Day de 23/07/2026 emitido pela BeMore"></div>
+        <div class="cap"><div class="dt">23/07/2026 · 10h50</div>
+          <h4>Status Day: 2 sem check-in, 3 fora do horário</h4>
+          <p>Documento da própria BeMore. Duas degustadoras sem qualquer check-in e três com entrada às 09h15, 09h30 e 09h59 — todas após o horário contratual de 09h. Justificativa única para as duas ausências: “problemas com o metrô”.</p></div>
+      </div>
+      <div class="prova">
+        <div class="imgbox shot"><img src="evidencias/status-day-24-07.jpg" alt="Status Day de 24/07/2026"></div>
+        <div class="cap"><div class="dt">24/07/2026 · 10h28</div>
+          <h4>Status Day: 3 em loja, 1 em deslocamento, 1 desligamento</h4>
+          <p>Às 10h28, apenas 3 dos 5 postos com check-in confirmado. Um posto em deslocamento e outro em processo de substituição por desistência — a primeira das quatro do projeto.</p></div>
+      </div>
+      <div class="prova">
+        <div class="imgbox shot"><img src="evidencias/status-day-04-08.jpg" alt="Status Day de 04/08/2026 com data divergente no cabeçalho"></div>
+        <div class="cap"><div class="dt">04/08/2026 · 10h58</div>
+          <h4>5 de 5 atrasadas — e o relatório com data errada</h4>
+          <p>Check-ins às 09h21, 09h30, 09h40, 09h42 e 09h50: nenhuma degustadora no horário, e todas classificadas como “Em loja” sem justificativa. O cabeçalho informa 30/07 enquanto as linhas registram 04/08 — o próprio instrumento de controle é inconsistente.</p></div>
+      </div>
+
+      <div class="prova">
+        <div class="imgbox"><img src="evidencias/pdv-sem-degustadora-23-07.jpg" alt="Ponto de melão sem degustadora no Extra Ricardo Jafet"></div>
+        <div class="cap"><div class="dt">23/07/2026 · 11h40</div>
+          <h4>Extra Ricardo Jafet — ponto ativo, sem degustadora</h4>
+          <p>Registro feito pela 75 LAB durante visita presencial. Ponto de melão montado e abastecido, sem nenhuma profissional em operação. Minutos antes, a BeMore havia reportado normalidade.</p></div>
+      </div>
+      <div class="prova">
+        <div class="imgbox"><img src="evidencias/pdv-sem-degustadora-01-08-cerro-cora.jpg" alt="Vila das Frutas Cerro Corá sem degustadora"></div>
+        <div class="cap"><div class="dt">01/08/2026 · 10h30</div>
+          <h4>Vila das Frutas (Cerro Corá) — posto vazio às 10h30</h4>
+          <p>Rota de auditoria conduzida pela 75 LAB acompanhada do supervisor da Agrícola Famosa. A degustadora chegou às 11h25 — 2h25 após o horário contratual.</p></div>
+      </div>
+      <div class="prova">
+        <div class="imgbox"><img src="evidencias/pdv-sem-degustadora-01-08-vila-guilherme.jpg" alt="Sonda Vila Guilherme sem degustadora"></div>
+        <div class="cap"><div class="dt">01/08/2026 · 11h16</div>
+          <h4>Sonda Vila Guilherme — sem degustadora a manhã inteira</h4>
+          <p>Três tentativas de cobertura falharam em sequência no mesmo dia: a titular não foi, a primeira substituta não conseguiu ir e a segunda desistiu de última hora. O posto só foi coberto após as 13h20.</p></div>
+      </div>
+
+      <div class="prova wide">
+        <div class="imgbox shot"><img src="evidencias/cliente-reclamacao-28-07.jpg" alt="Mensagem do cliente Agrícola Famosa relatando ausência da degustadora"></div>
+        <div class="cap"><div class="dt">28/07/2026 · 17h31 · mensagem do cliente</div>
+          <h4>“Fiquei 1h aqui no mercado e ngm sabia dela”</h4>
+          <p>O próprio cliente permaneceu uma hora na loja sem localizar a degustadora — a loja chegou a chamá-la no alto-falante. A explicação da BeMore (almoço fora de escala e celular descarregado) só chegou na manhã seguinte, 15 horas depois do fato e em desacordo com a exigência de reporte até as 10h.</p></div>
+      </div>
+      <div class="prova">
+        <div class="imgbox shot"><img src="evidencias/pagamento-nao-caiu-28-08.jpg" alt="Mensagens das degustadoras sobre pagamento não creditado"></div>
+        <div class="cap"><div class="dt">28/08/2026 · 09h08</div>
+          <h4>Inadimplência trabalhista e ausência coletiva</h4>
+          <p>Mensagens das próprias degustadoras encaminhadas ao grupo de gestão: salário não creditado e a constatação de que <b>“sexta passada somente uma menina foi ao local de trabalho”</b> — 4 dos 5 postos descobertos em um único dia.</p></div>
+      </div>
+
+      <div class="prova">
+        <div class="imgbox shot"><img src="evidencias/uniforme-padrao.jpg" alt="Slide do uniforme correto enviado pela 75 LAB"></div>
+        <div class="cap"><div class="dt">23/07/2026 · 12h02 · padrão de referência</div>
+          <h4>O padrão comunicado</h4>
+          <p>Máscara, luva, <b>touca branca</b>, avental Melão Famosa e bandeja. Enviado pela 75 LAB ao grupo com a instrução expressa “este é o padrão, favor comunicarem”.</p></div>
+      </div>
+      <div class="prova">
+        <div class="imgbox"><img src="evidencias/uniforme-fora-padrao-24-07.jpg" alt="Degustadora em operação sem a touca branca do padrão"></div>
+        <div class="cap"><div class="dt">24/07/2026 · 15h58</div>
+          <h4>O padrão em campo — sem a touca branca</h4>
+          <p>Um dia após a comunicação do padrão, degustadora em operação de manipulação de alimentos com bandana escura no lugar da touca branca. A reposição foi resolvida orientando a colaboradora a comprar em farmácia, sem os três orçamentos exigidos pelo contrato.</p></div>
+      </div>
+      <div class="prova">
+        <div class="imgbox shot"><img src="evidencias/pagamento-degustadoras-28-08.jpg" alt="Degustadoras cobrando pagamento no grupo"></div>
+        <div class="cap"><div class="dt">28/08/2026 · 12h46</div>
+          <h4>Cobrança pública das colaboradoras</h4>
+          <p>Segunda semana consecutiva de falha de pagamento — vale-transporte em 21/08 e salário em 28/08. Obrigação exclusiva da BeMore como única empregadora (Cláusula Sétima, §1º), com impacto direto no comparecimento em loja.</p></div>
+      </div>
+      <div class="prova">
+        <div class="imgbox"><img src="evidencias/material-avariado-01-09.jpg" alt="Bandeja de degustação trincada"></div>
+        <div class="cap"><div class="dt">01/09/2026 · 14h06</div>
+          <h4>Material de operação avariado</h4>
+          <p>Bandeja de degustação com trinca estrutural, encontrada em loja no início do expediente. Item de contato com alimento, sem controle de conservação ao longo do período.</p></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:24px">
+      <h3>Evidências em áudio (não transcritas neste documento)</h3>
+      <p>O dossiê inclui 9 arquivos de áudio do grupo oficial, entre eles as manifestações do cliente nos dias mais críticos: <b>06/08 às 10h25 e 11h39</b> (dia da visita da diretoria da Agrícola Famosa, com o PDV de abertura vazio às 09h46), <b>14/08 às 15h15, 16h00 e 16h54</b> (ausência da degustadora no dia da gravação institucional) e <b>01/09 às 14h53</b>. Os arquivos originais estão preservados no export e devem ser reproduzidos diretamente em qualquer tratativa formal.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RELATÓRIOS -->
+<section id="relatorios">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">05 · Contraprova</span>
+      <h2>Relatório oficial <b>× realidade de campo</b></h2>
+      <p>Este é o achado central da auditoria. Os relatórios que a BeMore entregou formalmente — e que foram apresentados ao cliente — não refletem a operação executada. A categoria “Falta / ausência” aparece zerada em todas as versões, e a base de atendimentos repete invariavelmente cinco linhas “09:00 às 18:00 — Realizada”.</p>
+    </div>
+
+    <div class="scrollx">
+      <table class="tb">
+        <tr>
+          <th style="width:23%">Relatório entregue</th><th style="width:13%">Período</th>
+          <th style="width:11%">Intercorrências<br>declaradas</th><th style="width:11%">Faltas<br>declaradas</th>
+          <th style="width:11%">Ocorrências<br>apuradas</th><th>Observação da auditoria</th>
+        </tr>
+        <tbody id="tabRel"></tbody>
+      </table>
+    </div>
+
+    <div class="grid3" style="margin-top:22px">
+      <div class="card" style="border-left:4px solid var(--crit)">
+        <h3>Subnotificação de 72%</h3>
+        <p>Somadas, as três entregas declaram <b>17 intercorrências</b>. A auditoria documentou <b>61</b> no mesmo período, todas com registro datado no grupo oficial em que a própria BeMore participa.</p>
+      </div>
+      <div class="card" style="border-left:4px solid var(--crit)">
+        <h3>Base de atendimentos é um modelo, não um registro</h3>
+        <p>Nos quatro arquivos, a aba de atendimentos traz sempre as mesmas 5 linhas com “09:00 / 18:00 / Realizada”, inclusive nos dias em que há prova fotográfica de PDV vazio e relato do gerente da loja atestando ausência.</p>
+      </div>
+      <div class="card" style="border-left:4px solid var(--crit)">
+        <h3>Reclassificação de faltas como atrasos</h3>
+        <p>A ausência integral de 22/07 no Extra Ricardo Jafet — 8 horas de posto descoberto, descoberta pelo cliente — foi lançada na base como <b>“Atraso / deslocamento”</b>, e não como falta. É o que mantém o indicador de faltas em zero.</p>
+      </div>
+    </div>
+
+    <div class="card dark" style="margin-top:20px">
+      <h3 style="color:var(--lime)">Efeito prático</h3>
+      <p>A 75 LAB apresentou ao cliente, de boa-fé, relatórios que não correspondiam ao que a Agrícola Famosa constatava nas próprias lojas. Isso transferiu para a agência o desgaste de reputação de uma falha de execução de terceiro — exatamente o ponto levantado pela diretoria em 01/08: <i>“o cliente está me colocando e colocando a 75 em check de todo o trabalho que estamos fazendo por conta das degustadoras”</i>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTRATO -->
+<section id="contrato" class="alt">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">06 · Fundamento</span>
+      <h2>Cláusulas <b>tensionadas</b></h2>
+      <p>Confronto entre as obrigações assumidas na minuta contratual em anexo e os fatos apurados. Serve de base jurídica para o pleito de glosa e para as condições de continuidade.</p>
+    </div>
+    <div id="clausulas"></div>
+  </div>
+</section>
+
+<!-- MACRO -->
+<section id="macro">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">07 · Decisão</span>
+      <h2>Resumo macro para <b>tomada de decisão</b></h2>
+      <p>Consolidação do impacto mensurável, cenários de glosa e a leitura de risco para a decisão sobre a continuidade da operação no mês 2.</p>
+    </div>
+
+    <div class="grid2" style="margin-bottom:22px">
+      <div class="card">
+        <h3>Impacto direto — dias-degustadora não entregues</h3>
+        <div class="scrollx" style="border:0;margin-top:12px">
+        <table class="tb">
+          <tr><th>Origem</th><th style="width:22%">Dias-degustadora</th></tr>
+          <tr><td>Faltas integrais confirmadas <span style="color:var(--ink3)">(22/07 Extra RJ · 22-23/07 Vila das Frutas · 01/08 Sonda VG · 21/08 e 28/08, 4 postos cada)</span></td><td class="n bad">12</td></tr>
+          <tr><td>Postos encontrados vazios por cliente ou 75 LAB, sem cobertura comprovada <span style="color:var(--ink3)">(23/07 · 28/07 · 01/08 · 25/08)</span></td><td class="n bad">4</td></tr>
+          <tr><td>Equivalente em atrasos — 28 min/dia sobre jornada de 8h, aplicados aos 134 dias cobertos</td><td class="n bad">8</td></tr>
+          <tr><td><b>Total de impacto mensurável</b></td><td class="n bad"><b>24</b></td></tr>
+          <tr><td>Escopo contratado <span style="color:var(--ink3)">(30 dias × 5 postos)</span></td><td class="n">150</td></tr>
+        </table>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Impactos não mensuráveis diretamente</h3>
+        <p style="margin-bottom:12px">Ainda que não convertidos em dias-degustadora, os itens abaixo integram o pleito por representarem custo real absorvido pela 75 LAB ou dano de relacionamento com o contratante final:</p>
+        <ul style="font-size:14px;color:var(--ink2);padding-left:18px;margin:0">
+          <li style="margin-bottom:8px"><b>3 rotas presenciais de fiscalização</b> executadas pela 75 LAB para suprir a ausência de reporte confiável</li>
+          <li style="margin-bottom:8px"><b>6 escaladas ao cliente</b>, uma delas ao nível de diretoria da Agrícola Famosa</li>
+          <li style="margin-bottom:8px"><b>Dia da visita da diretoria (06/08)</b> aberto com PDV vazio e degustação da concorrência ativa no mesmo ponto</li>
+          <li style="margin-bottom:8px"><b>Dia da gravação institucional (14/08)</b> com equipe parada aguardando degustadora que chegou às 11h</li>
+          <li style="margin-bottom:8px"><b>R$ 177,43</b> em materiais comprados em campo e repassados sem os três orçamentos exigidos em contrato</li>
+          <li><b>Relatórios entregues ao cliente</b> que não refletiam a operação, expondo a agência</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="calc">
+      <h3>Simulador de glosa</h3>
+      <p style="color:#B9BFB2;font-size:14px;margin:10px 0 0;max-width:70ch">O valor do contrato não consta da minuta em anexo (campo em branco na Cláusula Terceira). Informe o valor mensal efetivamente contratado para os 5 postos e o simulador aplica os cenários apurados sobre a base de 150 dias-degustadora.</p>
+      <div class="row">
+        <div>
+          <label for="valor">Valor mensal do contrato (R$)</label>
+          <input id="valor" type="number" min="0" step="500" value="60000" inputmode="numeric">
+        </div>
+      </div>
+      <div class="out">
+        <div>
+          <div class="k">Cenário conservador · 8,0%</div>
+          <div class="v" id="c1">—</div>
+          <div style="font-size:12px;color:#9AA08F;margin-top:8px">Somente as 12 faltas integrais confirmadas</div>
+        </div>
+        <div>
+          <div class="k">Cenário documentado · 10,7%</div>
+          <div class="v" id="c2">—</div>
+          <div style="font-size:12px;color:#9AA08F;margin-top:8px">16 faltas, incluindo as constatadas por cliente e 75 LAB</div>
+        </div>
+        <div class="hl">
+          <div class="k">Cenário pleno · 16,0%</div>
+          <div class="v" id="c3">—</div>
+          <div style="font-size:12px;color:#9AA08F;margin-top:8px">24 dias — faltas + equivalente em atrasos</div>
+        </div>
+      </div>
+      <p class="nota">Valor-dia por degustadora: <b id="vdia">—</b> · Acrescer ao pleito o ressarcimento de <b>R$ 177,43</b> em materiais aprovados sem os três orçamentos previstos na Cláusula Quarta, “b”. Recomendação da auditoria: abrir a negociação no cenário pleno e fechar não abaixo do cenário documentado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- AÇÕES -->
+<section id="acoes" class="alt">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">08 · Plano</span>
+      <h2>Ajustes <b>obrigatórios para a continuidade</b></h2>
+      <p>A operação foi prorrogada por mais um mês por decisão do cliente, apoiada na confiança no modelo. Essa prorrogação não deve ser executada sob as mesmas regras — os oito pontos abaixo são as condições mínimas para que o mês 2 não repita o mês 1.</p>
+    </div>
+
+    <div class="card">
+      <div class="act"><div class="i">01</div><div>
+        <h4>Aditivo com SLA e cláusula de substituição</h4>
+        <p>Formalizar a cláusula solicitada em 26/06 e não incluída: prazo máximo de reposição de posto descoberto (sugestão: 3 horas), sem custo adicional quando a causa for falha da equipe alocada, com multa progressiva por posto/dia não coberto.</p>
+        <span class="pz">Antes de qualquer novo faturamento</span></div></div>
+
+      <div class="act"><div class="i">02</div><div>
+        <h4>Condicionar o faturamento à comprovação trabalhista</h4>
+        <p>Acionar a Cláusula Sétima, §5º: exigir comprovantes de pagamento de salário e vale-transporte das 5 degustadoras como anexo obrigatório da nota fiscal. Duas semanas consecutivas de inadimplência já geraram ausência coletiva em loja.</p>
+        <span class="pz">Imediato</span></div></div>
+
+      <div class="act"><div class="i">03</div><div>
+        <h4>Reporte de ausências até as 10h — com penalidade</h4>
+        <p>A exigência do cliente existe desde 22/07 e nunca foi cumprida de forma consistente. Converter em obrigação contratual, com glosa automática do dia quando a 75 LAB souber da ausência por terceiros.</p>
+        <span class="pz">Antes do reinício</span></div></div>
+
+      <div class="act"><div class="i">04</div><div>
+        <h4>Base diária de presença por PDV, auditável</h4>
+        <p>Substituir a aba genérica “09:00 / 18:00 / Realizada” por extrato do sistema Involves com check-in, check-out, geolocalização e intervalo, por degustadora e por dia. Sem esse extrato, o relatório não é aceito como comprovação.</p>
+        <span class="pz">Primeiro relatório do mês 2</span></div></div>
+
+      <div class="act"><div class="i">05</div><div>
+        <h4>Manter e formalizar o protocolo de foto com senha</h4>
+        <p>A “senha da semana” instituída em 25/08 funciona e deve virar cláusula: foto no PDV até as 10h, com senha do dia visível. Ausência da foto equivale a ausência do posto até prova em contrário.</p>
+        <span class="pz">Vigente — formalizar</span></div></div>
+
+      <div class="act"><div class="i">06</div><div>
+        <h4>Banco de reservas contratado</h4>
+        <p>Exigir 2 degustadoras reservas treinadas e cadastradas nas lojas. Em 01/08 três tentativas de reposição falharam em sequência, e em 01/09 a substituta foi barrada por falta de liberação prévia — ambos evitáveis com reserva pré-habilitada.</p>
+        <span class="pz">Antes do reinício</span></div></div>
+
+      <div class="act"><div class="i">07</div><div>
+        <h4>Aprovação prévia de custos com três orçamentos</h4>
+        <p>Nenhum reembolso de material adquirido em campo sem aprovação prévia por escrito e três orçamentos, conforme Cláusula Quarta, “b”. Rever os R$ 177,43 já repassados sob esse critério.</p>
+        <span class="pz">Imediato</span></div></div>
+
+      <div class="act"><div class="i">08</div><div>
+        <h4>Comitê semanal de performance com indicadores fechados</h4>
+        <p>Reunião semanal de 30 minutos com quatro indicadores: cobertura de postos (%), pontualidade de entrada (%), ausências reportadas até as 10h (%) e rupturas de produto. Sem indicador fechado, a discussão volta a ser caso a caso — que é o modelo que falhou.</p>
+        <span class="pz">Semanal, a partir do reinício</span></div></div>
+    </div>
+
+    <div class="grid2" style="margin-top:22px">
+      <div class="card dark">
+        <h3 style="color:var(--lime)">Recomendação de encaminhamento</h3>
+        <p>Reunião formal com a BeMore, com este dossiê apresentado como peça única, cobrindo: (1) reconhecimento das ocorrências, (2) pleito de glosa no cenário pleno, (3) assinatura do aditivo com SLA antes do mês 2 e (4) plano de correção com prazos. Registrar a ata por e-mail no mesmo dia.</p>
+      </div>
+      <div class="card" style="border-left:4px solid var(--alta)">
+        <h3>Cenário de ruptura</h3>
+        <p>Caso o aditivo com SLA e a comprovação trabalhista não sejam aceitos, a recomendação é não renovar. A exposição da 75 LAB perante a Agrícola Famosa já alcançou o nível de diretoria, e a operação vinha sendo sustentada por fiscalização presencial da própria agência — um modelo que não escala para o roll-out.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANEXOS -->
+<section id="anexos">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">09 · Anexos</span>
+      <h2>Base <b>documental auditada</b></h2>
+      <p>Todos os arquivos abaixo integram o export original do grupo oficial do projeto e permanecem preservados como prova. Este relatório não altera, recorta ou reinterpreta nenhum deles — apenas os organiza cronologicamente.</p>
+    </div>
+    <ul class="files">
+      <li><b>_chat.txt</b> — export integral do grupo, 1.150 mensagens, 25/06 a 01/09/2026</li>
+      <li><b>Contrato — Sazonal.docx</b> — minuta de prestação de serviços BeMore Action</li>
+      <li><b>PMO_KICK OFF_Agricola_Julho_26.xlsb</b> — parâmetros de jornada, escala e head count</li>
+      <li><b>Cronograma_Treinamento_..._21-07-2026.pdf</b> — programação do onboarding presencial</li>
+      <li><b>Inventario_de_Materiais_17-07-2026.pdf</b> — insumos entregues pela 75 LAB e conferidos pela BeMore</li>
+      <li><b>TREINAMENTO DEGUSTAÇÃO.pdf</b> — material de treinamento da Agrícola Famosa</li>
+      <li><b>RELATÓRIO AGRICOLA FAMOSA..xlsx</b> — 1ª entrega, 27/07 17h59</li>
+      <li><b>RELATÓRIO AGRICOLA FAMOSA..xlsx</b> — 2ª entrega corrigida, 27/07 18h10</li>
+      <li><b>RELATÓRIO AGRICOLA FAMOSA.xlsx</b> — 3ª entrega, 03/08 17h41</li>
+      <li><b>RELATORIO_AGRICOLA_FAMOSA.xlsx</b> — 4ª entrega, 10/08 18h07</li>
+      <li><b>DEGUSTADORAS AGRICOLA FAMOSA.pptx</b> — books fotográficos (3 versões)</li>
+      <li><b>AGRICOLA FAMOSA (1).pdf</b> — book e dados cadastrais das degustadoras <code>(dado pessoal — não publicado)</code></li>
+      <li><b>21 imagens</b> — Status Days, PDVs, uniformes, mensagens de cliente e de colaboradoras</li>
+      <li><b>9 áudios .opus</b> — manifestações de cliente e de gestão nos dias críticos</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">75 LAB</div>
+    <p style="margin-top:14px;max-width:70ch">Auditoria operacional do piloto de degustações Agrícola Famosa executado pela BeMore Action. Documento produzido a partir de registros datados, sem interpretação de fatos não documentados. Emissão: 01/09/2026.</p>
+    <div class="lgpd">
+      <b style="color:#C9CEC2">Proteção de dados.</b> Este documento é de uso interno e restrito ao time da 75 LAB e às tratativas formais com a BeMore Action e a Agrícola Famosa. Nomes completos, CPF, RG, números de telefone e rostos de colaboradoras foram omitidos ou tarjados; o book cadastral das degustadoras não é reproduzido. Não redistribuir fora do escopo das tratativas contratuais.
+    </div>
+  </div>
+</footer>
+
+<div id="lb" role="dialog" aria-label="Imagem ampliada"><img src="" alt=""></div>
+
+<script src="dados.js"></script>
+<script>
+/* ---------- Registro ---------- */
+const listaEl = document.getElementById('lista');
+const contEl  = document.getElementById('contador');
+const buscaEl = document.getElementById('busca');
+let fGrav = 'todas', fTipo = 'todos', fTxt = '';
+
+const badge = g => g==='Crítica'?'b-crit':g==='Alta'?'b-alta':g==='Média'?'b-med':'b-baixa';
+const fmtData = iso => { const [a,m,d]=iso.split('-'); return d+'/'+m; };
+
+const tipos = [...new Set(OCORRENCIAS.map(o=>o.tipo))].sort();
+document.getElementById('tipos').innerHTML =
+  '<button class="chip on" data-f="t" data-v="todos">Todos</button>' +
+  tipos.map(t=>`<button class="chip" data-f="t" data-v="${t}">${t}</button>`).join('');
+
+function render(){
+  const itens = OCORRENCIAS.filter(o=>{
+    if(fGrav!=='todas' && o.grav!==fGrav) return false;
+    if(fTipo!=='todos' && o.tipo!==fTipo) return false;
+    if(fTxt){
+      const hay = (o.loja+' '+o.fato+' '+o.cit+' '+o.quem+' '+o.hora+' '+o.tipo+' '+o.resp).toLowerCase();
+      if(!hay.includes(fTxt)) return false;
+    }
+    return true;
+  }).sort((a,b)=> a.data===b.data ? a.n-b.n : a.data.localeCompare(b.data));
+
+  const crit = itens.filter(o=>o.grav==='Crítica').length;
+  contEl.innerHTML = `<b>${itens.length}</b> ocorrência${itens.length!==1?'s':''} exibida${itens.length!==1?'s':''}` +
+    (crit?` · <span style="color:var(--crit)">${crit} crítica${crit!==1?'s':''}</span>`:'') +
+    ` · de ${OCORRENCIAS.length} registradas no período`;
+
+  listaEl.innerHTML = itens.map(o=>`
+    <article class="occ" data-g="${o.grav}">
+      <div class="l1">
+        <span class="d">${fmtData(o.data)}</span>
+        <span class="badge ${badge(o.grav)}">${o.grav}</span>
+        <span class="tipo">${o.tipo}</span>
+        <span class="loja">${o.loja} · responsabilidade: ${o.resp}</span>
+      </div>
+      <p class="fato">${o.fato}</p>
+      <blockquote>“${o.cit}”<cite>${o.quem} · ${o.hora}</cite></blockquote>
+      ${o.prova?`<a class="pv" href="#provas">▸ prova visual no dossiê</a>`:''}
+    </article>`).join('') ||
+    '<div class="card"><p>Nenhuma ocorrência corresponde aos filtros aplicados.</p></div>';
+}
+
+document.addEventListener('click', e=>{
+  const c = e.target.closest('.chip'); if(!c) return;
+  const grp = c.dataset.f;
+  document.querySelectorAll(`.chip[data-f="${grp}"]`).forEach(x=>x.classList.remove('on'));
+  c.classList.add('on');
+  if(grp==='g') fGrav = c.dataset.v; else fTipo = c.dataset.v;
+  render();
+});
+buscaEl.addEventListener('input', e=>{ fTxt = e.target.value.trim().toLowerCase(); render(); });
+render();
+
+/* ---------- Comparativo de relatórios ---------- */
+document.getElementById('tabRel').innerHTML = RELATORIOS.map(r=>`
+  <tr>
+    <td><b>${r.arq}</b><br><span style="color:var(--ink3);font-size:12.5px">entregue ${r.entrega}</span></td>
+    <td>${r.periodo}</td>
+    <td class="n">${r.declarado}</td>
+    <td class="n bad">${r.faltasDeclaradas}</td>
+    <td class="n">${r.campo}</td>
+    <td>${r.obs}</td>
+  </tr>`).join('');
+
+/* ---------- Cláusulas ---------- */
+document.getElementById('clausulas').innerHTML = CLAUSULAS.map(c=>`
+  <div class="cl">
+    <span class="id">${c.id}</span><span class="st${/disponível|Base para/.test(c.status)?' ok':''}">${c.status}</span>
+    <p class="txt">${c.txt}</p>
+    <p class="ev">${c.evid}</p>
+  </div>`).join('');
+
+/* ---------- Simulador ---------- */
+const BRL = n => n.toLocaleString('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0});
+function calc(){
+  const v = parseFloat(document.getElementById('valor').value) || 0;
+  const dia = v/150;
+  document.getElementById('c1').textContent = BRL(dia*12);
+  document.getElementById('c2').textContent = BRL(dia*16);
+  document.getElementById('c3').textContent = BRL(dia*24);
+  document.getElementById('vdia').textContent = dia.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+}
+document.getElementById('valor').addEventListener('input', calc);
+calc();
+
+/* ---------- Lightbox ---------- */
+const lb = document.getElementById('lb'), lbImg = lb.querySelector('img');
+document.querySelectorAll('.prova img').forEach(img=>{
+  img.addEventListener('click', ()=>{ lbImg.src = img.src; lbImg.alt = img.alt; lb.classList.add('on'); });
+});
+lb.addEventListener('click', ()=> lb.classList.remove('on'));
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') lb.classList.remove('on'); });
+</script>
+</body>
+</html>
