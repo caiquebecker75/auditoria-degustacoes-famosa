@@ -42,7 +42,7 @@ const OCORRENCIAS = [
 
   {n:10, data:"2026-07-23", loja:"Extra Ricardo Jafet", tipo:"Conduta", grav:"Alta", resp:"BeMore",
    fato:"Degustadora obteve o contato do cliente com o encarregado da loja e passou a acioná-lo diretamente, furando o canal de gestão e expondo a falha de material ao contratante final.",
-   cit:"A degustadora Raquel está mandando mensagem direto para o cliente falando que não tem copinho", quem:"Vanessa Morelli (75LAB)", hora:"23/07 11:41"},
+   cit:"A degustadora Raquel está mandando mensagem direto para o cliente falando que não tem copinho", quem:"Vanessa Morelli (75LAB)", hora:"23/07 11:41", prova:"#cadeia"},
 
   {n:11, data:"2026-07-23", loja:"Extra Ricardo Jafet", tipo:"Uniforme/EPI", grav:"Média", resp:"BeMore",
    fato:"Degustadora em operação com avental fora do padrão, 2º dia consecutivo.",
@@ -174,7 +174,7 @@ const OCORRENCIAS = [
 
   {n:43, data:"2026-08-14", loja:"Sonda Água Branca", tipo:"Falta", grav:"Crítica", resp:"BeMore",
    fato:"No dia da gravação institucional, com equipe de produção e cliente aguardando, a degustadora chegou às 11h — 2 horas atrasada — e comunicou o motivo diretamente ao supervisor do cliente, não à gestão.",
-   cit:"Sonda água Branca a promotora mandou mensagem pro supervisor da famosa falando que acordou tarde / Poxa, no dia da gravação todos esperando ela / Chegou 11 da manhã", quem:"Vanessa Morelli (75LAB)", hora:"14/08 11:27"},
+   cit:"Sonda água Branca a promotora mandou mensagem pro supervisor da famosa falando que acordou tarde / Poxa, no dia da gravação todos esperando ela / Chegou 11 da manhã", quem:"Vanessa Morelli (75LAB)", hora:"14/08 11:27", prova:"#cadeia"},
 
   {n:44, data:"2026-08-14", loja:"Sonda Água Branca", tipo:"Relatório", grav:"Alta", resp:"BeMore",
    fato:"A BeMore contestou o relato de campo alegando monitoramento via Involves às 09h, atribuindo a informação a “reporte errôneo” — sem apresentar o extrato do sistema que sustentasse a versão.",
@@ -194,7 +194,7 @@ const OCORRENCIAS = [
 
   {n:48, data:"2026-08-21", loja:"Todos os PDVs", tipo:"Falta", grav:"Crítica", resp:"BeMore",
    fato:"Segundo relato das próprias degustadoras, apenas 1 das 5 compareceu ao trabalho nesta sexta-feira — 4 postos descobertos em um único dia.",
-   cit:"Sexta passada somente uma menina foi ao local de trabalho", quem:"Degustadoras (print encaminhado por Caique Becker)", hora:"28/08 09:08", prova:"pagamento-nao-caiu-28-08.jpg"},
+   cit:"Sexta passada somente uma menina foi ao local de trabalho", quem:"Degustadoras (print recebido do diretor da Agrícola Famosa e encaminhado por Caique Becker)", hora:"28/08 09:08", prova:"pagamento-nao-caiu-28-08.jpg"},
 
   {n:49, data:"2026-08-22", loja:"CRF Imigrantes / Sonda V. Guilherme", tipo:"Relatório", grav:"Média", resp:"BeMore",
    fato:"Ausência de registro fotográfico de dois PDVs; a comprovação de presença dependeu de cobrança da 75LAB.",
@@ -256,20 +256,20 @@ const OCORRENCIAS = [
    cit:"paleativamente a degustadora está indo com uma camiseta de cor neutra e está se identificando em loja com uma etiqueta da própria loja com o nome da Agricola Famosa", quem:"Cauã Batista (BeMore)", hora:"03/09 09:41"},
 
   {n:64, data:"2026-09-03", loja:"Todos os PDVs", tipo:"Pagamento", grav:"Crítica", resp:"BeMore",
-   fato:"Nova denúncia de salário não creditado. A BeMore negou por escrito a existência de qualquer atraso — negativa contrariada pelos relatos das colaboradoras nos dias seguintes.",
-   cit:"Não temos nada atrasado com as degustadoras. Inclusive, vou entrar em contato com a [degustadora] para entender o porque está questionando.", quem:"Micael Oliveira (BeMore)", hora:"03/09 19:31"},
+   fato:"Nova denúncia de salário não creditado, desta vez da degustadora Ariane. A BeMore negou por escrito a existência de qualquer atraso — negativa contrariada pelos relatos das colaboradoras nos dias seguintes.",
+   cit:"Não temos nada atrasado com as degustadoras. Inclusive, vou entrar em contato com a Ariane para entender o porque está questionando.", quem:"Micael Oliveira (BeMore)", hora:"03/09 19:31"},
 
   {n:65, data:"2026-09-04", loja:"Todos os PDVs", tipo:"Pagamento", grav:"Crítica", resp:"BeMore",
-   fato:"Mais uma degustadora sem pagamento. Justificativa da BeMore: a colaboradora teria entrado “fora da data de programação dos pagamentos”.",
-   cit:"Bom dia! O meu pagamento não caiu.", quem:"Degustadora (mensagem encaminhada por Vanessa Morelli)", hora:"04/09 09:16"},
+   fato:"A degustadora Alessandra informa que o pagamento não caiu. Justificativa da BeMore: ela teria entrado “fora da data de programação dos pagamentos”.",
+   cit:"Bom dia! O meu pagamento não caiu.", quem:"Alessandra, degustadora (mensagem encaminhada por Vanessa Morelli)", hora:"04/09 09:16"},
 
   {n:66, data:"2026-09-04", loja:"Contato direto com a 75 LAB", tipo:"Pagamento", grav:"Crítica", resp:"BeMore",
    fato:"Degustadora relata pagamento com valor faltante pela segunda semana consecutiva e promessa de acerto não cumprida.",
-   cit:"O meu pagamento veio errado pela segunda semana / Veio faltando 150,00 reais / Falaram que iria ser pago ontem e não foi!", quem:"Degustadora (print recebido pela 75 LAB)", hora:"04/09 13:52", prova:"#pagamentos"},
+   cit:"O meu pagamento veio errado pela segunda semana / Veio faltando 150,00 reais / Falaram que iria ser pago ontem e não foi!", quem:"Raissa, degustadora (print recebido pela 75 LAB às 13h52, dois minutos após o aviso no grupo)", hora:"04/09 13:52", prova:"#cadeia"},
 
   {n:67, data:"2026-09-04", loja:"Contato direto com a 75 LAB", tipo:"Conduta", grav:"Alta", resp:"BeMore",
-   fato:"Degustadoras passam a procurar a 75 LAB diretamente, fora do canal de gestão da BeMore, para tratar de pendências.",
-   cit:"a [degustadora] está entrando em contato conosco no privado. Favor falar com ela", quem:"Vanessa Morelli (75LAB)", hora:"04/09 13:50"},
+   fato:"A degustadora Raissa passa a procurar a 75 LAB diretamente, fora do canal de gestão da BeMore, para tratar de pendências.",
+   cit:"a Raissa está entrando em contato conosco no privado. Favor falar com ela", quem:"Vanessa Morelli (75LAB)", hora:"04/09 13:50"},
 
   {n:68, data:"2026-09-08", loja:"Shibata Ermelino Matarazzo", tipo:"Ruptura", grav:"Média", resp:"Loja / Agrícola Famosa",
    fato:"Degustadora em loja sem produto disponível; reabastecimento previsto apenas para a noite.",
@@ -296,8 +296,12 @@ const OCORRENCIAS = [
    cit:"Atenção! Projeto cancelado. Queremos que vocês retirem imediatamente todos os insumos de todas as degustadoras e não permitam mais a atuação de mais ninguém", quem:"Caique Becker (75LAB)", hora:"14/09 18:18"},
 
   {n:74, data:"2026-09-15", loja:"Contato direto com a 75 LAB", tipo:"Pagamento", grav:"Crítica", resp:"BeMore",
-   fato:"Ex-degustadora procura diretamente a 75 LAB cobrando valores em aberto há duas semanas e meia e relata que a BeMore segue publicando vagas enquanto não quita o que deve.",
-   cit:"vai fazer 2 semanas e meia que estou aguardando para poder me acertarem o restante do meu pagamento... Pq além de não me pagarem, ainda tem a cara de pau de postarem vaga nos grupos que estou", quem:"Ex-degustadora do projeto (print recebido pela 75 LAB)", hora:"15/09 08:56", prova:"#pagamentos"}
+   fato:"Jeniffer, ex-degustadora do Sonda Vila Guilherme, procura diretamente a 75 LAB cobrando valores em aberto há duas semanas e meia e relata que a BeMore segue publicando vagas enquanto não quita o que deve.",
+   cit:"vai fazer 2 semanas e meia que estou aguardando para poder me acertarem o restante do meu pagamento... Pq além de não me pagarem, ainda tem a cara de pau de postarem vaga nos grupos que estou", quem:"Jeniffer, ex-degustadora do Sonda Vila Guilherme (print recebido pela 75 LAB)", hora:"15/09 08:56", prova:"#cadeia"},
+
+  {n:75, data:"2026-08-28", loja:"Grupo com o cliente presente", tipo:"Pagamento", grav:"Crítica", resp:"BeMore",
+   fato:"As degustadoras Ariane e Jeni cobram o pagamento em um grupo em que o cliente está presente. A falta de pagamento da BeMore passa a ser exposta diretamente à Agrícola Famosa.",
+   cit:"sei que pode estar acontecendo algo internamente. mas vale dar uma satisfação porque nesse grupo está o cliente..", quem:"Caique Becker (75LAB)", hora:"28/08 12:52", prova:"#cadeia"}
 ];
 
 /* Linha do tempo da inadimplência salarial (21/08 a 15/09/2026)
@@ -306,17 +310,18 @@ const PAGAMENTOS = [
   {d:"21/08", h:"10:02", lado:"75LAB", quem:"Vanessa Morelli", txt:"Chegou ao meu conhecimento que algumas meninas não estão em loja devido a falta de pagamento de VT, isso procede?"},
   {d:"21/08", h:"16:21", lado:"BeMore", quem:"Adelita Ribeiro", txt:"verifiquei aqui Van a Pamella me confirmou que foram todos pagos hj"},
   {d:"28/08", h:"08:27", lado:"75LAB", quem:"Vanessa Morelli", txt:"As degustadoras estão dizendo que o salário não caiu, podem verificar por favor"},
-  {d:"28/08", h:"09:02", lado:"Degustadora", quem:"Degustadoras (print encaminhado ao grupo)", txt:"o pagamento não caiu????? / O meu tbem nao caiu amiga"},
+  {d:"28/08", h:"09:02", lado:"Degustadora", quem:"Degustadoras (mensagens que chegaram ao diretor da Agrícola Famosa)", txt:"o pagamento não caiu????? / O meu tbem nao caiu amiga"},
   {d:"28/08", h:"09:08", lado:"75LAB", quem:"Caique Becker", txt:"Acabei de receber a mensagem do diretor da famosa.. Além do pagamento, realmente não teve ninguém na sexta feira?"},
+  {d:"28/08", h:"12:46", lado:"Degustadora", quem:"Ariane e Jeni, em grupo com o cliente presente", txt:"Ariane: Pessoal alguma posição? Do pagamento por gentileza?? / Jeni: ?"},
   {d:"28/08", h:"12:52", lado:"75LAB", quem:"Caique Becker", txt:"sei que pode estar acontecendo algo internamente. mas vale dar uma satisfação porque nesse grupo está o cliente.."},
   {d:"29/08", h:"09:55", lado:"75LAB", quem:"Vanessa Morelli", txt:"O problema do pagamentos delas foi resolvido? Esperamos que próxima semana não ocorra novamente, foi a segunda semana seguida"},
   {d:"29/08", h:"10:10", lado:"BeMore", quem:"Cauã Batista", txt:"Sim, todas estão ok com o pagamento!"},
   {d:"03/09", h:"19:21", lado:"75LAB", quem:"Vanessa Morelli", txt:"Pessoal / Urgente / Salário não caiu?"},
-  {d:"03/09", h:"19:31", lado:"BeMore", quem:"Micael Oliveira", txt:"Não temos nada atrasado com as degustadoras. Inclusive, vou entrar em contato com a [degustadora] para entender o porque está questionando."},
-  {d:"04/09", h:"09:16", lado:"75LAB", quem:"Vanessa Morelli (encaminhando degustadora)", txt:"Bom dia! O meu pagamento não caiu."},
-  {d:"04/09", h:"09:17", lado:"BeMore", quem:"Cauã Batista", txt:"o caso da [degustadora] é que ela entrou fora da data de programação dos pagamentos!"},
-  {d:"04/09", h:"13:50", lado:"75LAB", quem:"Vanessa Morelli", txt:"a [degustadora] está entrando em contato conosco no privado. Favor falar com ela"},
-  {d:"04/09", h:"13:52", lado:"Degustadora", quem:"Degustadora (print recebido pela 75 LAB)", txt:"O meu pagamento veio errado pela segunda semana. Veio faltando 150,00 reais. Falaram que iria ser pago ontem e não foi!"},
+  {d:"03/09", h:"19:31", lado:"BeMore", quem:"Micael Oliveira", txt:"Não temos nada atrasado com as degustadoras. Inclusive, vou entrar em contato com a Ariane para entender o porque está questionando."},
+  {d:"04/09", h:"09:16", lado:"75LAB", quem:"Vanessa Morelli (encaminhando mensagem da Alessandra)", txt:"Bom dia! O meu pagamento não caiu."},
+  {d:"04/09", h:"09:17", lado:"BeMore", quem:"Cauã Batista", txt:"o Caso da alessandra é que ela entrou fora da data de programação dos pagamentos!"},
+  {d:"04/09", h:"13:50", lado:"75LAB", quem:"Vanessa Morelli", txt:"a Raissa está entrando em contato conosco no privado. Favor falar com ela"},
+  {d:"04/09", h:"13:52", lado:"Degustadora", quem:"Raissa, degustadora (print recebido pela 75 LAB)", txt:"O meu pagamento veio errado pela segunda semana. Veio faltando 150,00 reais. Falaram que iria ser pago ontem e não foi!"},
   {d:"12/09", h:"10:09", lado:"75LAB", quem:"Vanessa Morelli", txt:"Pessoal vocês estão vendo as movimentações das degustadoras no grupo?"},
   {d:"12/09", h:"11:30", lado:"75LAB", quem:"Caique Becker", txt:"Pessoal confesso que estou com vergonha. O nome da 75LAB está no meio disso tudo... Vocês estão deixando de pagar seus funcionários? Preciso que me sinalizem até para ver se mantemos a ação ou não"},
   {d:"12/09", h:"12:48", lado:"75LAB", quem:"Vanessa Morelli", txt:"@Adelita Ribeiro pessoal qual a posição?"},
@@ -330,7 +335,7 @@ const PAGAMENTOS = [
   {d:"14/09", h:"16:06", lado:"75LAB", quem:"Caique Becker", txt:"@Adelita Ribeiro! você falou que estava resolvendo.. o que resolveu?"},
   {d:"14/09", h:"17:19", lado:"75LAB", quem:"Vanessa Morelli", txt:"Pessoal qual a resolução do pagamento? @Adelita Ribeiro @Cauã @Micael Oliveira"},
   {d:"14/09", h:"18:18", lado:"75LAB", k:"cancel", quem:"Caique Becker", txt:"Atenção! Projeto cancelado. Queremos que vocês retirem imediatamente todos os insumos de todas as degustadoras e não permitam mais a atuação de mais ninguém. @Adelita Ribeiro aguardo com urgência sua ligação. Preciso que o grupo com as degustadoras sejam excluídos imediatamente!"},
-  {d:"15/09", h:"08:56", lado:"Degustadora", quem:"Ex-degustadora do projeto (print recebido pela 75 LAB)", txt:"vai fazer 2 semanas e meia que estou aguardando para poder me acertarem o restante do meu pagamento. Eu trabalhei correto. Demonstrei resultados... Pq além de não me pagarem, ainda tem a cara de pau de postarem vaga nos grupos que estou"}
+  {d:"15/09", h:"08:56", lado:"Degustadora", quem:"Jeniffer, ex-degustadora do Sonda Vila Guilherme (print recebido pela 75 LAB)", txt:"vai fazer 2 semanas e meia que estou aguardando para poder me acertarem o restante do meu pagamento. Eu trabalhei correto. Demonstrei resultados... Pq além de não me pagarem, ainda tem a cara de pau de postarem vaga nos grupos que estou"}
 ];
 
 /* Comparativo relatório oficial × campo */
@@ -372,4 +377,19 @@ const CLAUSULAS = [
   {id:"Lacuna contratual", txt:"Cláusula de substituição de profissionais e SLA operacional — solicitada formalmente pela 75LAB em 26/06/2026, antes da assinatura.",
    status:"Solicitada e não confirmada",
    evid:"“sugerimos prever que, em caso de ausência, atraso, conduta inadequada ou solicitação justificada da 75LAB, a Bemore deverá providenciar substituição em prazo compatível com a operação, sem custo adicional quando a necessidade decorrer de falha da equipe alocada” — Daniel 75LAB, 26/06 11:27. A minuta em anexo não contém a cláusula. Sem SLA e sem multa, a operação ficou sem mecanismo automático de correção — exatamente o risco antecipado pela 75LAB."}
+];
+
+
+/* Penalidades financeiras com respaldo jurídico (encerramento) */
+const PENALIDADES = [
+  {item:"Retenção integral dos pagamentos à BeMore", base:"100% dos valores em aberto, em notas emitidas e a emitir, até a comprovação da quitação às degustadoras e a apuração final", fund:"Cláusula Sétima, §5º (retenção até a comprovação) · art. 476 do Código Civil (exceção do contrato não cumprido)", nat:"Contratual + Legal", quando:"Imediata, a partir das 12h01 de 15/09"},
+  {item:"Ressarcimento dos salários e VT pagos diretamente", base:"Valor efetivamente pago a cada degustadora, comprovado por PIX e recibo individual", fund:"Arts. 346, III, e 349 do Código Civil (sub-rogação do terceiro interessado) · Lei 6.019/74, art. 5º-A, §5º · Cláusula Sétima, §§1º e 4º", nat:"Legal + Contratual", quando:"Compensação no acerto final (art. 368 do Código Civil)"},
+  {item:"Glosa dos serviços não prestados no 1º ciclo", base:"16 dias-degustadora documentados (10,7% do escopo), ou 24 incluindo o equivalente em atrasos (16%)", fund:"Art. 476 do Código Civil · Cláusula Quinta, b · Cláusula Décima Primeira (danos diretos)", nat:"Contratual + Legal", quando:"Abatimento no acerto final"},
+  {item:"Glosa dos dias de paralisação", base:"Dias-degustadora sem cobertura após 01/09, inclusive pela recusa das degustadoras em trabalhar sem receber", fund:"Art. 476 do Código Civil · Cláusula Quinta. A paralisação decorre de inadimplemento exclusivo da BeMore", nat:"Legal + Contratual", quando:"Abatimento no acerto final"},
+  {item:"Materiais comprados sem três orçamentos", base:"R$ 177,43 lançados nas planilhas de envio de material da BeMore", fund:"Cláusula Quarta, b: três orçamentos obrigatórios, sob pena de não aprovação da despesa", nat:"Contratual", quando:"Não aprovação, imediata"},
+  {item:"Custos de mitigação suportados pela 75 LAB", base:"Rotas de fiscalização, reposição de materiais e uniformes, logística e gestão de crise, com comprovantes", fund:"Arts. 389 e 402 do Código Civil (danos emergentes) · Cláusula Décima Primeira", nat:"Legal + Contratual", quando:"Compensação no acerto final"},
+  {item:"Insumos e uniformes não devolvidos", base:"Valor de reposição dos itens do Inventário de 17/07/2026 não devolvidos em até 3 dias úteis", fund:"Art. 389 do Código Civil · Cláusula Sétima, §4º", nat:"Legal + Contratual", quando:"Após o prazo de devolução"},
+  {item:"Juros de mora e atualização monetária", base:"Sobre os valores a ressarcir, desde cada desembolso ou desde a notificação, conforme o caso", fund:"Arts. 389, parágrafo único, 395 e 406 do Código Civil: IPCA e taxa legal, na redação da Lei 14.905/2024", nat:"Legal", quando:"Na liquidação"},
+  {item:"Honorários advocatícios e despesas de cobrança", base:"Honorários contratados para a cobrança e custas", fund:"Arts. 389 e 404 do Código Civil", nat:"Legal", quando:"Na liquidação ou em juízo"},
+  {item:"Dano à imagem da 75 LAB", base:"Arbitramento judicial: degustadoras acionando a 75 LAB e a Agrícola Famosa, cobrança de salário em grupo com o cliente presente e mensagens que chegaram à diretoria do cliente", fund:"Súmula 227 do STJ (dano moral à pessoa jurídica) · arts. 186 e 927 do Código Civil · Cláusula Quinta (zelar pela reputação da Contratante)", nat:"Judicial", quando:"Via ação judicial"}
 ];

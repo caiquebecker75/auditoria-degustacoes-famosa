@@ -7,7 +7,7 @@
 <meta name="description" content="Auditoria documental da operação de degustações Agrícola Famosa executada pela BeMore (22/07 a 14/09/2026): registro de faltas, inadimplência salarial, provas e resumo macro para decisão.">
 <meta name="robots" content="noindex,nofollow">
 <meta property="og:title" content="Auditoria Operacional — Degustações Agrícola Famosa × BeMore">
-<meta property="og:description" content="74 ocorrências documentadas, 4 ciclos semanais de inadimplência salarial às degustadoras, projeto cancelado em 14/09/2026.">
+<meta property="og:description" content="75 ocorrências documentadas, 4 ciclos semanais de inadimplência salarial às degustadoras, projeto cancelado em 14/09/2026.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -205,6 +205,36 @@ footer a{color:#C9CEC2}
 .enc{margin:12px 0 0;padding-left:20px;font-size:14.5px;color:var(--ink2)}
 .enc li{margin-bottom:9px}
 
+/* MOTIM · CADEIA */
+.mot{list-style:none;padding:0;margin:12px 0 0}
+.mot li{padding:10px 0;border-bottom:1px solid var(--rule);font-size:14px;color:var(--ink)}
+.mot li:last-child{border-bottom:0}
+.mot li b{font-family:Anton,sans-serif;font-weight:400;letter-spacing:.05em;margin-right:8px}
+.mot small{display:block;color:var(--ink3);font-size:11.5px;margin-top:3px}
+.chain{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0 0 30px}
+.node{background:var(--paper);border:1px solid var(--rule);border-radius:3px;padding:14px 18px;min-width:160px}
+.node .k{display:block;font-family:Anton,sans-serif;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
+.node b{display:block;font-size:17px;font-weight:500;margin-top:2px}
+.node small{display:block;font-size:12px;color:var(--ink3);margin-top:2px}
+.node.dg{background:var(--ink);border-color:var(--ink);color:#fff}
+.node.dg .k,.node.dg small{color:#9AA08F}
+.node.bm{border:1px dashed var(--crit)} .node.bm small{color:var(--crit)}
+.node.hit{border-left:4px solid var(--alta)}
+.arr{font-size:11.5px;color:var(--ink3);text-align:center;min-width:86px;line-height:1.3}
+.arr b{display:block;font-size:22px;color:var(--ink);font-weight:400}
+.arr.x b{color:var(--crit)} .arr.o b{color:var(--alta)}
+.lvl{font-size:20px;font-weight:500;margin:36px 0 14px;display:flex;gap:10px;align-items:center}
+.prova.tall .imgbox{height:470px}
+
+/* PENALIDADES */
+.l-lg{background:#EDEFE8;color:var(--ink)}
+.calc select{background:#191d18;border:1px solid #2c322a;color:#fff;padding:12px 14px;border-radius:3px;font-family:Lexend,sans-serif;font-size:15px;width:240px}
+.liq{width:100%;border-collapse:collapse;font-size:14px;margin-top:4px}
+.liq td{padding:11px 0;border-bottom:1px solid #2c322a;color:#C9CEC2}
+.liq td.v{text-align:right;font-family:Anton,sans-serif;font-size:18px;color:#fff;white-space:nowrap;padding-left:16px}
+.liq tr.tot td{border-bottom:0;color:var(--lime);font-size:15px;padding-top:18px}
+.liq tr.tot td.v{color:var(--lime);font-size:32px}
+
 @media(max-width:900px){
   .verdict .card{grid-template-columns:1fr}
   .kpis{grid-template-columns:repeat(2,1fr)}
@@ -224,6 +254,7 @@ footer a{color:#C9CEC2}
 <nav class="top"><div class="wrap">
   <span class="brand">75 LAB · Auditoria</span>
   <a href="#pagamentos" style="color:#FF8A93">Inadimplência salarial</a>
+  <a href="#cadeia" style="color:#FF8A93">Contato por fora</a>
   <a href="#panorama">Panorama</a>
   <a href="#pactuado">O que foi pactuado</a>
   <a href="#registro">Registro de faltas</a>
@@ -231,6 +262,7 @@ footer a{color:#C9CEC2}
   <a href="#relatorios">Relatório × Campo</a>
   <a href="#contrato">Contrato</a>
   <a href="#macro">Resumo macro</a>
+  <a href="#penalidades">Penalidades</a>
   <a href="#acoes">Ações</a>
   <a href="#anexos">Anexos</a>
 </div></nav>
@@ -257,7 +289,7 @@ footer a{color:#C9CEC2}
   </div>
   <div>
     <ul>
-      <li><span class="n">74</span><div>ocorrências documentadas, sendo <b>29 críticas</b></div></li>
+      <li><span class="n">75</span><div>ocorrências documentadas, sendo <b>30 críticas</b></div></li>
       <li><span class="n">4</span><div>ciclos semanais <b>sem pagamento integral às degustadoras</b></div></li>
       <li><span class="n">0</span><div>comprovantes de pagamento apresentados pela BeMore</div></li>
       <li><span class="n">16</span><div>dias-degustadora comprometidos — <b>10,7% do 1º ciclo</b></div></li>
@@ -284,15 +316,21 @@ footer a{color:#C9CEC2}
         <p>Todas as respostas registradas no grupo oficial sobre o pagamento. Nenhuma veio acompanhada de comprovante.</p>
         <div id="payBemore"></div>
       </div>
-      <div class="card">
-        <h3>O que as degustadoras disseram</h3>
-        <p>Prints recebidos diretamente pela 75 LAB, transcritos na íntegra. Números de telefone e nomes omitidos.</p>
-        <div class="bub"><div class="bh">+55 11 ▇▇▇▇▇-▇▇▇▇ · ex-degustadora do projeto</div>
-          <p>Bom dia Cayque! Meu nome é [omitido]<br>Eu prestei serviço para vcs<br>E vai fazer 2 semanas e meia que estou aguardando para poder me acertarem o restante do meu pagamento<br>Eu trabalhei correto<br>Demonstrei resultados<br>Por favor me ajude com isso!</p><span class="bt">15/09 · 08:56</span></div>
-        <div class="bub">
-          <p>Pq além de não me pagarem,ainda tem a cara de pau de postarem vaga nos grupos que estou<br>Não pagaram o que deve<br>Porém estão contratando<br>Sacanagem isso</p><span class="bt">15/09 · 08:57</span></div>
-        <div class="bub" style="margin-top:18px"><div class="bh">+55 11 ▇▇▇▇▇-▇▇▇▇ · degustadora do projeto</div>
-          <p>O meu pagamento veio errado pela segunda semana<br>Veio faltando 150,00 reais<br>Falaram que iria ser pago ontem e não foi !</p><span class="bt">04/09 · 13:52</span></div>
+      <div class="card" style="border-left:4px solid var(--crit)">
+        <h3>“Motim”: paralisação coletiva pela falta de pagamento</h3>
+        <p>A recusa das degustadoras em trabalhar sem receber é consequência direta do inadimplemento da BeMore, e não falta das colaboradoras. Os registros mostram a escalada:</p>
+        <ul class="mot">
+          <li><b>21/08</b>“algumas meninas não estão em loja devido a falta de pagamento de VT”<small>Vanessa Morelli (75 LAB), 10h02 · 10h07: “a Ariane mandando no grupo sobre o pagamento do VT”</small></li>
+          <li><b>21/08</b>“Sexta passada somente uma menina foi ao local de trabalho”: 4 de 5 postos parados<small>Relato das próprias degustadoras, que chegou ao diretor da Agrícola Famosa</small></li>
+          <li><b>28/08</b>“o pagamento não caiu????? / O meu tbem nao caiu amiga / NÃO”<small>Mensagens das degustadoras encaminhadas pelo diretor da Agrícola Famosa, 09h08</small></li>
+          <li><b>28/08</b>“Pessoal alguma posição? Do pagamento por gentileza??”: Ariane e Jeni, em grupo com o cliente<small>12h46 · Caique Becker, 12h52: “nesse grupo está o cliente”</small></li>
+          <li><b>28/08</b>“Ontem somente a Marilu esteve”: de novo, 4 de 5 postos parados<small>Vanessa Morelli (75 LAB), 29/08 09h55</small></li>
+          <li><b>03/09</b>“Urgente. Salário não caiu?”<small>Vanessa Morelli (75 LAB), 19h21 · Micael (BeMore), 19h31: “Não temos nada atrasado”</small></li>
+          <li><b>12/09</b>“vocês estão vendo as movimentações das degustadoras no grupo?”<small>Vanessa Morelli (75 LAB), 10h09</small></li>
+          <li><b>14/09</b>“pelo andar no grupo, parece que elas não irão se não receber”<small>Vanessa Morelli (75 LAB), 15h45 · projeto cancelado às 18h18</small></li>
+          <li><b>15/09</b>“Não pagaram o que deve / Porém estão contratando / Sacanagem isso”<small>Jeniffer, ex-degustadora, direto no WhatsApp do Caique, 08h57</small></li>
+        </ul>
+        <p style="margin-top:12px">Os prints originais estão em <a href="#cadeia" style="color:var(--teal)">Contato por fora</a>.</p>
       </div>
     </div>
 
@@ -307,6 +345,71 @@ footer a{color:#C9CEC2}
   </div>
 </section>
 
+<!-- CADEIA -->
+<section id="cadeia" class="alt">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">00.1 · Contato por fora</span>
+      <h2>Degustadoras acionando <b>toda a cadeia</b></h2>
+      <p>O canal das degustadoras é a BeMore, sua única empregadora. Sem pagamento e sem resposta, elas passaram a procurar diretamente cada elo acima: a 75 LAB, que contratou o serviço, e a Agrícola Famosa, cliente final, inclusive em grupo com a presença do cliente e com mensagens que chegaram à diretoria. As imagens abaixo são os prints originais; apenas telefones e fotos de perfil foram desfocados.</p>
+    </div>
+
+    <div class="chain">
+      <div class="node dg"><span class="k">Origem</span><b>Degustadoras</b><small>sem salário e sem VT</small></div>
+      <div class="arr x"><b>→</b>canal previsto</div>
+      <div class="node bm"><span class="k">Empregadora</span><b>BeMore</b><small>sem solução por 4 semanas</small></div>
+      <div class="arr o"><b>⇢</b>por fora</div>
+      <div class="node hit"><span class="k">Contratante</span><b>75 LAB</b><small>Raissa · Jeniffer</small></div>
+      <div class="arr o"><b>⇢</b>por fora</div>
+      <div class="node hit"><span class="k">Cliente final</span><b>Agrícola Famosa</b><small>diretoria · supervisor · grupo com o cliente</small></div>
+    </div>
+
+    <h3 class="lvl"><span class="lado l-dg">Elo 1</span> Agrícola Famosa, o cliente final</h3>
+    <div class="grid2">
+      <div class="prova">
+        <div class="imgbox shot"><img src="evidencias/pagamento-nao-caiu-28-08.jpg" alt="Mensagens das degustadoras sobre salário, recebidas pelo diretor da Agrícola Famosa"></div>
+        <div class="cap"><div class="dt">28/08/2026 · 09h08 · via diretor da Agrícola Famosa</div>
+          <h4>As cobranças das degustadoras chegam à diretoria do cliente</h4>
+          <p>Caique Becker, no grupo: <i>“Acabei de receber a mensagem do diretor da famosa..”</i>. O diretor encaminhou à 75 LAB as mensagens das degustadoras cobrando o salário (<i>“o pagamento não caiu?????”</i>, <i>“O meu tbem nao caiu amiga”</i>) e relatando que <i>“sexta passada somente uma menina foi ao local de trabalho”</i>.</p></div>
+      </div>
+      <div class="prova">
+        <div class="imgbox shot"><img src="evidencias/pagamento-degustadoras-28-08.jpg" alt="Ariane e Jeni cobrando pagamento em grupo com o cliente"></div>
+        <div class="cap"><div class="dt">28/08/2026 · 12h46 · grupo com o cliente presente</div>
+          <h4>Ariane e Jeni cobram o pagamento na frente do cliente</h4>
+          <p><i>“Pessoal alguma posição? Do pagamento por gentileza??”</i>. Caique Becker, 12h52: <i>“sei que pode estar acontecendo algo internamente. mas vale dar uma satisfação porque nesse grupo está o cliente..”</i>. O telefone da “Jeni”, desfocado aqui, é o mesmo que procurou a 75 LAB em 15/09.</p></div>
+      </div>
+    </div>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card">
+        <h3>23/07 · Raquel aciona o cliente direto</h3>
+        <p>“A degustadora Raquel está mandando mensagem direto para o cliente falando que não tem copinho... pegou o contato do cliente com o encarregado da loja”</p>
+        <p style="margin-top:8px;font-size:12px;color:var(--ink3)">Vanessa Morelli (75 LAB), 23/07 11h41</p>
+      </div>
+      <div class="card">
+        <h3>14/08 · Degustadora se reporta ao supervisor da Famosa</h3>
+        <p>“Sonda água Branca a promotora mandou mensagem pro supervisor da famosa falando que acordou tarde”, no dia da gravação institucional</p>
+        <p style="margin-top:8px;font-size:12px;color:var(--ink3)">Vanessa Morelli (75 LAB), 14/08 11h27</p>
+      </div>
+    </div>
+
+    <h3 class="lvl"><span class="lado l-75">Elo 2</span> 75 LAB, a contratante</h3>
+    <div class="grid2">
+      <div class="prova tall">
+        <div class="imgbox shot"><img src="evidencias/print-degustadora-75lab-04-09.jpg" alt="Degustadora cobrando pagamento no privado da 75 LAB em 04/09"></div>
+        <div class="cap"><div class="dt">04/09/2026 · 13h52 · privado da 75 LAB</div>
+          <h4>Raissa procura a 75 LAB: “veio faltando 150,00 reais”</h4>
+          <p>Às 13h50, no grupo, a 75 LAB avisou a BeMore: <i>“a Raissa está entrando em contato conosco no privado. Favor falar com ela”</i>. Dois minutos depois: <i>“O meu pagamento veio errado pela segunda semana / Veio faltando 150,00 reais / Falaram que iria ser pago ontem e não foi!”</i></p></div>
+      </div>
+      <div class="prova tall">
+        <div class="imgbox shot"><img src="evidencias/print-jeniffer-75lab-15-09.jpg" alt="Jeniffer cobrando pagamento direto do Caique em 15/09"></div>
+        <div class="cap"><div class="dt">15/09/2026 · 08h56 · WhatsApp do Caique</div>
+          <h4>Jeniffer: “2 semanas e meia” sem receber e a BeMore contratando</h4>
+          <p>Ex-degustadora do Sonda Vila Guilherme: <i>“Pq além de não me pagarem, ainda tem a cara de pau de postarem vaga nos grupos que estou / Não pagaram o que deve / Porém estão contratando / Sacanagem isso”</i>. Mesmo número da “Jeni” que cobrou o pagamento no grupo com o cliente em 28/08.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- PANORAMA -->
 <section id="panorama">
   <div class="wrap">
@@ -317,8 +420,8 @@ footer a{color:#C9CEC2}
     </div>
 
     <div class="kpis">
-      <div class="kpi"><div class="n red">74</div><div class="l">Ocorrências documentadas entre 22/07 e 15/09/2026</div><div class="s">13 incluídas na atualização de 15/09</div></div>
-      <div class="kpi"><div class="n red">29</div><div class="l">Classificadas como críticas — posto descoberto, cliente impactado ou inadimplência trabalhista</div><div class="s">39% do total</div></div>
+      <div class="kpi"><div class="n red">75</div><div class="l">Ocorrências documentadas entre 22/07 e 15/09/2026</div><div class="s">14 incluídas na atualização de 15/09</div></div>
+      <div class="kpi"><div class="n red">30</div><div class="l">Classificadas como críticas — posto descoberto, cliente impactado ou inadimplência trabalhista</div><div class="s">40% do total</div></div>
       <div class="kpi"><div class="n">16<small>/150</small></div><div class="l">Dias-degustadora comprometidos sobre os 150 previstos (30 dias × 5 postos)</div><div class="s">12 confirmados + 4 constatados por terceiros</div></div>
       <div class="kpi"><div class="n red">0</div><div class="l">Faltas registradas na categoria “Falta / ausência” dos relatórios da BeMore</div><div class="s">Contra 16 documentadas em campo</div></div>
 
@@ -458,7 +561,7 @@ footer a{color:#C9CEC2}
         <div class="imgbox shot"><img src="evidencias/pagamento-nao-caiu-28-08.jpg" alt="Mensagens das degustadoras sobre pagamento não creditado"></div>
         <div class="cap"><div class="dt">28/08/2026 · 09h08</div>
           <h4>Inadimplência trabalhista e ausência coletiva</h4>
-          <p>Mensagens das próprias degustadoras encaminhadas ao grupo de gestão: salário não creditado e a constatação de que <b>“sexta passada somente uma menina foi ao local de trabalho”</b> — 4 dos 5 postos descobertos em um único dia.</p></div>
+          <p>Mensagens das próprias degustadoras que chegaram ao diretor da Agrícola Famosa e foram encaminhadas ao grupo de gestão: salário não creditado e a constatação de que <b>“sexta passada somente uma menina foi ao local de trabalho”</b> — 4 dos 5 postos descobertos em um único dia.</p></div>
       </div>
 
       <div class="prova">
@@ -476,8 +579,8 @@ footer a{color:#C9CEC2}
       <div class="prova">
         <div class="imgbox shot"><img src="evidencias/pagamento-degustadoras-28-08.jpg" alt="Degustadoras cobrando pagamento no grupo"></div>
         <div class="cap"><div class="dt">28/08/2026 · 12h46</div>
-          <h4>Cobrança pública das colaboradoras</h4>
-          <p>Segunda semana consecutiva de falha de pagamento — vale-transporte em 21/08 e salário em 28/08. Obrigação exclusiva da BeMore como única empregadora (Cláusula Sétima, §1º), com impacto direto no comparecimento em loja.</p></div>
+          <h4>Ariane e Jeni cobram o pagamento em grupo com o cliente</h4>
+          <p>Segunda semana consecutiva de falha de pagamento, agora exposta na frente da Agrícola Famosa. Obrigação exclusiva da BeMore como única empregadora (Cláusula Sétima, §1º), com impacto direto no comparecimento em loja.</p></div>
       </div>
       <div class="prova">
         <div class="imgbox"><img src="evidencias/material-avariado-01-09.jpg" alt="Bandeja de degustação trincada"></div>
@@ -554,7 +657,7 @@ footer a{color:#C9CEC2}
     <div class="shead">
       <span class="eyebrow">07 · Decisão</span>
       <h2>Resumo macro para <b>tomada de decisão</b></h2>
-      <p>Consolidação do impacto mensurável, cenários de glosa e a leitura de risco para a decisão sobre a continuidade da operação no mês 2.</p>
+      <p>Consolidação do impacto mensurável, cenários de glosa e penalidades financeiras do encerramento, com o fundamento jurídico de cada uma.</p>
     </div>
 
     <div class="grid2" style="margin-bottom:22px">
@@ -612,6 +715,45 @@ footer a{color:#C9CEC2}
         </div>
       </div>
       <p class="nota">Valor-dia por degustadora: <b id="vdia">—</b> · Acrescer ao pleito o ressarcimento de <b>R$ 177,43</b> em materiais aprovados sem os três orçamentos previstos na Cláusula Quarta, “b”. Recomendação da auditoria: abrir a negociação no cenário pleno e fechar não abaixo do cenário documentado.</p>
+    </div>
+
+    <div class="shead" id="penalidades" style="margin-top:64px">
+      <span class="eyebrow">07.1 · Penalidades</span>
+      <h2>Penalidades financeiras <b>com respaldo jurídico</b></h2>
+      <p>O que a 75 LAB pode reter, glosar, compensar e cobrar da BeMore pelo inadimplemento salarial e pelos descumprimentos operacionais. Cada item indica o fundamento (contrato, Código Civil ou jurisprudência) e o momento de aplicação.</p>
+    </div>
+    <div class="card" style="border-left:4px solid var(--alta);margin-bottom:18px">
+      <h3>Antes de aplicar: o contrato não prevê multa contra a BeMore</h3>
+      <p>A minuta analisada não tem cláusula penal (multa percentual) por descumprimento da BeMore. A única multa do contrato, de 2% mais juros (Cláusula Terceira, §1º), protege a BeMore em caso de atraso da Contratante. Por isso nenhuma “multa” aparece abaixo como se fosse automática: as penalidades se apoiam em retenção, glosa, ressarcimento, compensação e perdas e danos, todas com base legal expressa. A simetria com a multa de 2% serve como argumento de negociação, não como cobrança.</p>
+    </div>
+    <div class="scrollx">
+      <table class="tb">
+        <tr><th style="width:4%">#</th><th style="width:20%">Penalidade</th><th style="width:25%">Base de cálculo</th><th style="width:28%">Fundamento</th><th style="width:11%">Natureza</th><th>Aplicação</th></tr>
+        <tbody id="penBody"></tbody>
+      </table>
+    </div>
+
+    <div class="calc" style="margin-top:22px">
+      <h3>Liquidação do encerramento</h3>
+      <p style="color:#B9BFB2;font-size:14px;margin:10px 0 0;max-width:72ch">Preencha com os valores reais. A glosa usa o mesmo valor mensal do contrato informado no simulador acima (base de 150 dias-degustadora). Os dias de paralisação são só os posteriores a 01/09, porque 21/08 e 28/08 já estão na glosa do 1º ciclo.</p>
+      <div class="row">
+        <div><label for="lqCen">Glosa do 1º ciclo</label>
+          <select id="lqCen"><option value="12">Conservador · 12 dias (8,0%)</option><option value="16" selected>Documentado · 16 dias (10,7%)</option><option value="24">Pleno · 24 dias (16,0%)</option></select></div>
+        <div><label for="lqSal">Salários e VT pagos às degustadoras (R$)</label><input id="lqSal" type="number" min="0" step="50" value="0" inputmode="decimal"></div>
+        <div><label for="lqPar">Dias-degustadora parados após 01/09</label><input id="lqPar" type="number" min="0" step="1" value="0" inputmode="numeric"></div>
+        <div><label for="lqCus">Custos de mitigação (R$)</label><input id="lqCus" type="number" min="0" step="50" value="0" inputmode="decimal"></div>
+        <div><label for="lqIns">Insumos não devolvidos (R$)</label><input id="lqIns" type="number" min="0" step="50" value="0" inputmode="decimal"></div>
+      </div>
+      <table class="liq">
+        <tr><td>Glosa dos serviços não prestados no 1º ciclo</td><td class="v" id="lq1">—</td></tr>
+        <tr><td>Glosa dos dias de paralisação</td><td class="v" id="lq2">—</td></tr>
+        <tr><td>Ressarcimento de salários e VT pagos diretamente</td><td class="v" id="lq3">—</td></tr>
+        <tr><td>Custos de mitigação</td><td class="v" id="lq4">—</td></tr>
+        <tr><td>Insumos e uniformes não devolvidos</td><td class="v" id="lq5">—</td></tr>
+        <tr><td>Materiais sem três orçamentos</td><td class="v" id="lq6">—</td></tr>
+        <tr class="tot"><td>Total a reter e compensar</td><td class="v" id="lqTot">—</td></tr>
+      </table>
+      <p class="nota">Ficam fora do total por dependerem de liquidação ou de decisão judicial: juros de mora e atualização monetária, honorários advocatícios e o dano à imagem da 75 LAB. Enquanto não houver acerto, nenhum valor é pago à BeMore (retenção integral).</p>
     </div>
   </div>
 </section>
@@ -704,7 +846,7 @@ footer a{color:#C9CEC2}
     <ul class="files">
       <li><b>chat.txt · chat.md</b> — export integral atualizado do grupo, 921 mensagens, 25/06 a 14/09/2026</li>
       <li><b>_chat.txt</b> — export anterior do grupo (1.150 linhas), 25/06 a 01/09/2026</li>
-      <li><b>2 prints de degustadoras</b> — mensagens recebidas diretamente pela 75 LAB em 04/09 e 15/09 <code>(transcritas; telefones e nomes omitidos)</code></li>
+      <li><b>2 prints de degustadoras</b> — mensagens recebidas diretamente pela 75 LAB em 04/09 e 15/09 <code>(prints originais; telefones e fotos de perfil desfocados)</code></li>
       <li><b>Contrato — Sazonal.docx</b> — minuta de prestação de serviços BeMore Action</li>
       <li><b>PMO_KICK OFF_Agricola_Julho_26.xlsb</b> — parâmetros de jornada, escala e head count</li>
       <li><b>Cronograma_Treinamento_..._21-07-2026.pdf</b> — programação do onboarding presencial</li>
@@ -776,7 +918,7 @@ function render(){
       </div>
       <p class="fato">${o.fato}</p>
       <blockquote>“${o.cit}”<cite>${o.quem} · ${o.hora}</cite></blockquote>
-      ${o.prova?`<a class="pv" href="${o.prova.startsWith('#')?o.prova:'#provas'}">▸ ${o.prova.startsWith('#')?'print transcrito no dossiê':'prova visual no dossiê'}</a>`:''}
+      ${o.prova?`<a class="pv" href="${o.prova.startsWith('#')?o.prova:'#provas'}">▸ ${o.prova.startsWith('#')?'print no dossiê':'prova visual no dossiê'}</a>`:''}
     </article>`).join('') ||
     '<div class="card"><p>Nenhuma ocorrência corresponde aos filtros aplicados.</p></div>';
 }
@@ -813,6 +955,25 @@ document.getElementById('payTimeline').innerHTML = PAGAMENTOS.map(p=>{
   ultimoDia = p.d;
   return dia + `<div class="it${p.k==='cancel'?' cancel':''}"><div class="top"><span class="lado ${ladoCls[p.lado]}">${p.k==='cancel'?'75 LAB · cancelamento':ladoTxt[p.lado]}</span>${p.h} · ${p.quem}</div>${p.txt}</div>`;
 }).join('');
+
+/* ---------- Penalidades ---------- */
+const natCls = {Contratual:'l-75', Legal:'l-lg', Judicial:'l-bm'};
+document.getElementById('penBody').innerHTML = PENALIDADES.map((x,i)=>`
+  <tr><td class="n">${i+1}</td><td><b>${x.item}</b></td><td>${x.base}</td><td>${x.fund}</td>
+  <td>${x.nat.split(' + ').map(n=>`<span class="lado ${natCls[n]}">${n}</span>`).join(' ')}</td><td>${x.quando}</td></tr>`).join('');
+
+const BRL2 = n => n.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+function calcLiq(){
+  const num = id => parseFloat(document.getElementById(id).value) || 0;
+  const dia = num('valor')/150;
+  const linhas = [dia*num('lqCen'), dia*num('lqPar'), num('lqSal'), num('lqCus'), num('lqIns'), 177.43];
+  linhas.forEach((v,i)=> document.getElementById('lq'+(i+1)).textContent = BRL2(v));
+  document.getElementById('lqTot').textContent = BRL2(linhas.reduce((a,b)=>a+b,0));
+}
+['valor','lqCen','lqSal','lqPar','lqCus','lqIns'].forEach(id=>{
+  const el = document.getElementById(id); el.addEventListener('input', calcLiq); el.addEventListener('change', calcLiq);
+});
+calcLiq();
 
 /* ---------- Comparativo de relatórios ---------- */
 document.getElementById('tabRel').innerHTML = RELATORIOS.map(r=>`

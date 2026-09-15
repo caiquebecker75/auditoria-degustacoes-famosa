@@ -12,11 +12,12 @@ Dossiê de auditoria documental do piloto de degustações da **Agrícola Famosa
 | Panorama | 8 indicadores macro extraídos de registros datados |
 | Linha de base | O que foi pactuado (jornada, escala, uniforme, insumos, reporte) |
 | Inadimplência salarial | Linha do tempo de cobranças × respostas da BeMore (21/08 a 15/09), prints transcritos |
-| Registro de faltas | 74 ocorrências com fato apurado + citação literal, autoria, data e hora — filtrável por gravidade, tipo e busca livre |
+| Contato por fora | Prints originais das degustadoras acionando a 75 LAB e a Agrícola Famosa (cliente e diretoria) |
+| Registro de faltas | 75 ocorrências com fato apurado + citação literal, autoria, data e hora — filtrável por gravidade, tipo e busca livre |
 | Provas visuais | 12 evidências (Status Days, PDVs vazios, uniforme, mensagens de cliente e de colaboradoras) |
 | Relatório × Campo | Confronto entre os 4 relatórios .xlsx entregues pela BeMore e os fatos apurados |
 | Contrato | 7 fundamentos (6 cláusulas + Lei 6.019/74), com fundamento para o pleito |
-| Resumo macro | Impacto em dias-degustadora + simulador de glosa em 3 cenários |
+| Resumo macro | Impacto em dias-degustadora, simulador de glosa, 10 penalidades com fundamento jurídico e liquidação do encerramento |
 | Encerramento | Passos de encerramento + 8 requisitos para novas contratações |
 
 ## Base documental
