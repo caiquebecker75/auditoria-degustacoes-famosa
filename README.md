@@ -1,7 +1,7 @@
 # Auditoria Operacional — Degustações Agrícola Famosa × BeMore
 
 Dossiê de auditoria documental do piloto de degustações da **Agrícola Famosa**, executado pela
-**BeMore Action** sob gestão da **75 LAB**, no período de **22/07 a 01/09/2026**.
+**BeMore Action** sob gestão da **75 LAB**, no período de **22/07 a 14/09/2026** — atualizado em 15/09/2026 com a inadimplência salarial das degustadoras e o cancelamento do projeto.
 
 **Página publicada:** consulte o link de GitHub Pages deste repositório.
 
@@ -11,17 +11,18 @@ Dossiê de auditoria documental do piloto de degustações da **Agrícola Famosa
 |---|---|
 | Panorama | 8 indicadores macro extraídos de registros datados |
 | Linha de base | O que foi pactuado (jornada, escala, uniforme, insumos, reporte) |
-| Registro de faltas | 61 ocorrências com fato apurado + citação literal, autoria, data e hora — filtrável por gravidade, tipo e busca livre |
+| Inadimplência salarial | Linha do tempo de cobranças × respostas da BeMore (21/08 a 15/09), prints transcritos |
+| Registro de faltas | 74 ocorrências com fato apurado + citação literal, autoria, data e hora — filtrável por gravidade, tipo e busca livre |
 | Provas visuais | 12 evidências (Status Days, PDVs vazios, uniforme, mensagens de cliente e de colaboradoras) |
 | Relatório × Campo | Confronto entre os 4 relatórios .xlsx entregues pela BeMore e os fatos apurados |
-| Contrato | 6 cláusulas tensionadas, com fundamento para o pleito |
+| Contrato | 7 fundamentos (6 cláusulas + Lei 6.019/74), com fundamento para o pleito |
 | Resumo macro | Impacto em dias-degustadora + simulador de glosa em 3 cenários |
-| Ações | 8 condições mínimas para a continuidade no mês 2 |
+| Encerramento | Passos de encerramento + 8 requisitos para novas contratações |
 
 ## Base documental
 
-Todo o conteúdo deriva do export oficial do grupo de WhatsApp do projeto (1.150 mensagens,
-25/06 a 01/09/2026), dos 4 relatórios .xlsx entregues pela BeMore, do PMO de kick-off,
+Todo o conteúdo deriva do export oficial do grupo de WhatsApp do projeto (921 mensagens,
+25/06 a 14/09/2026), dos 4 relatórios .xlsx entregues pela BeMore, do PMO de kick-off,
 do cronograma de treinamento, do inventário de materiais e da minuta contratual.
 Nenhum fato foi inferido — todos têm registro datado de origem.
 
