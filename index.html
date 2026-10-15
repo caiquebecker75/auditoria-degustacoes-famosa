@@ -226,6 +226,13 @@ footer a{color:#C9CEC2}
 .lvl{font-size:20px;font-weight:500;margin:36px 0 14px;display:flex;gap:10px;align-items:center}
 .prova.tall .imgbox{height:470px}
 
+.prova.doc .imgbox{height:auto;background:#fff;padding:10px}
+.prova.doc img{height:auto;object-fit:contain}
+.vic{background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--crit);border-radius:0 3px 3px 0;padding:18px 22px;margin-bottom:10px}
+.vic h4{font-size:16px;font-weight:500;margin-bottom:7px}
+.vic p{font-size:14px;color:var(--ink);margin:0 0 8px}
+.vic .fund{font-size:13.5px;color:var(--ink2);border-top:1px solid var(--rule);padding-top:8px;margin:0}
+
 /* COBRANÇA E PREJUÍZO */
 .big{display:flex;flex-wrap:wrap;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-bottom:22px}
 .big div{background:var(--ink);color:#fff;flex:1 1 220px;padding:26px 24px}
@@ -327,6 +334,46 @@ footer a{color:#C9CEC2}
       <div><div class="n">2</div><div class="l">Compromissos do acordo de encerramento descumpridos: o abatimento no último boleto e a entrega da relação de faltas</div></div>
       <div><div class="n">0</div><div class="l">Comprovantes de pagamento às degustadoras apresentados até hoje, apesar da confirmação verbal da proprietária</div></div>
       <div class="pale"><div class="n">8</div><div class="l">Ligações não atendidas pela proprietária em 17 minutos, num único dia de tentativa de solução</div></div>
+      <div class="pale"><div class="n">R$ 28.435,51</div><div class="l">Total cobrado nos dois títulos, pelo valor cheio de julho e agosto</div></div>
+    </div>
+
+    <h3 class="tlh">Os títulos emitidos</h3>
+    <div class="scrollx" style="margin-top:14px">
+      <table class="tb">
+        <tr><th style="width:24%">Documento</th><th style="width:12%">Emissão</th><th style="width:12%">Vencimento</th><th style="width:14%">Valor</th><th>Observação</th></tr>
+        <tbody id="titBody"></tbody>
+      </table>
+    </div>
+
+    <h3 class="tlh" style="margin-top:36px">Sete vícios nos títulos</h3>
+    <p style="color:var(--ink2);font-size:15px;max-width:72ch;margin:0 0 16px">Cada um deles, isoladamente, já impede a cobrança do valor cheio. Somados, tornam o protesto um ato temerário.</p>
+    <div id="vicios"></div>
+
+    <div class="provas" style="margin-top:26px">
+      <div class="prova doc">
+        <div class="imgbox shot"><img src="evidencias/titulo-nf97-integralmedica.jpg" alt="Discriminação da NF-e 97 citando faturamento Integralmedica"></div>
+        <div class="cap"><div class="dt">NF-e 00000097 · emitida em 02/09/2026</div>
+          <h4>A nota cobra o fechamento de outro cliente</h4>
+          <p>A discriminação do serviço que lastreia os R$ 18.129,37 diz, literalmente: <i>“FECHAMENTO BEMORE TEMPORARIOS FATURAMENTO INTEGRALMEDICA JULHO/AGOSTO 2026 - SALARIOS”</i>. Integralmedica não é parte deste contrato.</p></div>
+      </div>
+      <div class="prova doc">
+        <div class="imgbox shot"><img src="evidencias/titulo-boleto97-mora.jpg" alt="Instrução de mora de R$ 72,51 por dia no boleto 97"></div>
+        <div class="cap"><div class="dt">Boleto 97/001 · vencido em 30/09/2026</div>
+          <h4>Mora de R$ 72,51 por dia, cerca de 12% ao mês</h4>
+          <p>Doze vezes o limite legal de 1% ao mês e muito acima do próprio contrato, que prevê multa de 2% e juros de 1% ao mês. Ao lado, o campo de desconto e abatimento aparece em branco.</p></div>
+      </div>
+      <div class="prova doc">
+        <div class="imgbox shot"><img src="evidencias/titulo-boleto99-abatimento.jpg" alt="Boleto 99 do Itaú com campo de abatimento em branco"></div>
+        <div class="cap"><div class="dt">Boleto 99 · vencimento 13/10/2026</div>
+          <h4>Emitente, espécie, aceite e abatimento</h4>
+          <p>Beneficiária: BEMORE INSIGHT LTDA, CNPJ 61.722.514/0001-45. Espécie DS, aceite N, documento de 02/09 reprocessado em 09/10 com vencimento posterior ao da nota. Campo de abatimento em branco.</p></div>
+      </div>
+      <div class="prova doc">
+        <div class="imgbox shot"><img src="evidencias/titulo-nf99-publicidade.jpg" alt="Código de serviço de propaganda e publicidade na NF-e 99"></div>
+        <div class="cap"><div class="dt">NF-e 00000099 · emitida em 02/09/2026</div>
+          <h4>Benefícios lançados como propaganda e publicidade</h4>
+          <p>Despesas operacionais e benefícios de mão de obra foram classificados no código 02496, de propaganda e publicidade, com ISS de 5%, em vez do código de fornecimento de mão de obra usado na outra nota.</p></div>
+      </div>
     </div>
 
     <div class="grid2">
@@ -777,7 +824,7 @@ footer a{color:#C9CEC2}
     <div class="shead">
       <span class="eyebrow">07 · Decisão</span>
       <h2>Resumo macro para <b>tomada de decisão</b></h2>
-      <p>Consolidação do impacto mensurável, cenários de glosa e penalidades financeiras do encerramento, com o fundamento jurídico de cada uma.</p>
+      <p>A base de cálculo vem das próprias notas da BeMore: R$ 32.057,04 de serviço bruto no ciclo. Consolidação do impacto mensurável, cenários de glosa e penalidades financeiras do encerramento, com o fundamento jurídico de cada uma.</p>
     </div>
 
     <div class="grid2" style="margin-bottom:22px">
@@ -810,11 +857,11 @@ footer a{color:#C9CEC2}
 
     <div class="calc">
       <h3>Simulador de glosa</h3>
-      <p style="color:#B9BFB2;font-size:14px;margin:10px 0 0;max-width:70ch">O valor do contrato não consta da minuta em anexo (campo em branco na Cláusula Terceira). Informe o valor mensal efetivamente contratado para os 5 postos e o simulador aplica os cenários apurados sobre a base de 150 dias-degustadora.</p>
+      <p style="color:#B9BFB2;font-size:14px;margin:10px 0 0;max-width:70ch">O valor preenchido vem das notas emitidas pela BeMore para julho e agosto: R$ 21.750,90 de salários mais R$ 10.306,14 de benefícios e despesas, totalizando R$ 32.057,04 de serviço bruto. Ajuste se o valor contratado for outro e o simulador aplica os cenários apurados sobre a base de 150 dias-degustadora.</p>
       <div class="row">
         <div>
           <label for="valor">Valor mensal do contrato (R$)</label>
-          <input id="valor" type="number" min="0" step="500" value="60000" inputmode="numeric">
+          <input id="valor" type="number" min="0" step="500" value="32057" inputmode="numeric">
         </div>
       </div>
       <div class="out">
@@ -967,7 +1014,7 @@ footer a{color:#C9CEC2}
       <li><b>chat.txt · chat.md</b> — export integral atualizado do grupo, 921 mensagens, 25/06 a 14/09/2026</li>
       <li><b>_chat.txt</b> — export anterior do grupo (1.150 linhas), 25/06 a 01/09/2026</li>
       <li><b>4 prints da conversa com a proprietária da BeMore</b> — tentativa de solução direta em setembro/2026 <code>(telefone e foto de perfil desfocados)</code></li>
-      <li><b>Boletos bancários emitidos pela BeMore</b> — sem autorização e sem os abatimentos acordados <code>(a anexar)</code></li>
+      <li><b>NF-e 97 e 99 e os dois boletos</b> — emitidos pela BeMore Insight em 02/09/2026, total de R$ 28.435,51</li>
       <li><b>2 prints de degustadoras</b> — mensagens recebidas diretamente pela 75 LAB em 04/09 e 15/09 <code>(prints originais; telefones e fotos de perfil desfocados)</code></li>
       <li><b>Contrato — Sazonal.docx</b> — minuta de prestação de serviços BeMore Action</li>
       <li><b>PMO_KICK OFF_Agricola_Julho_26.xlsb</b> — parâmetros de jornada, escala e head count</li>
@@ -1077,6 +1124,12 @@ document.getElementById('payTimeline').innerHTML = PAGAMENTOS.map(p=>{
   ultimoDia = p.d;
   return dia + `<div class="it${p.k==='cancel'?' cancel':''}"><div class="top"><span class="lado ${ladoCls[p.lado]}">${p.k==='cancel'?'75 LAB · cancelamento':ladoTxt[p.lado]}</span>${p.h} · ${p.quem}</div>${p.txt}</div>`;
 }).join('');
+
+/* ---------- Títulos ---------- */
+document.getElementById('titBody').innerHTML = TITULOS.map(t=>
+  `<tr><td><b>${t.doc}</b></td><td>${t.emis}</td><td>${t.venc}</td><td class="money red">${t.valor}</td><td>${t.obs}</td></tr>`).join('');
+document.getElementById('vicios').innerHTML = VICIOS.map((v,i)=>
+  `<div class="vic"><h4>${i+1}. ${v.t}</h4><p>${v.d}</p><p class="fund">${v.f}</p></div>`).join('');
 
 /* ---------- Cobrança indevida e prejuízo ---------- */
 const ladoC = {'75LAB':'l-75','BeMore':'l-bm','Sistema':'l-sys'};

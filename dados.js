@@ -388,6 +388,9 @@ const CLAUSULAS = [
   {id:"Cláusula Sétima, §5º", txt:"“Fica a Bemore obrigada a enviar, quando solicitado, a situação dos pagamentos... Caso não sejam apresentadas à Cliente as devidas comprovações, os pagamentos poderão ser retidos até que os documentos solicitados sejam enviados”",
    status:"Acionada — notificação de 15/09/2026",
    evid:"Base expressa para o bloqueio integral dos pagamentos à BeMore até a comprovação de quitação de salários e VT de todas as degustadoras que atuaram no projeto. Acionada na notificação extrajudicial de 15/09/2026, com prazo até as 17h."},
+  {id:"Cláusula Terceira, §1º", txt:"“O atraso ou irregularidade no pagamento de qualquer valor devido pela Cliente à Bemore, acarretará multa no valor de 2% (dois por cento) sobre o principal, juros moratórios de (um por cento) ao mês pro rata die”",
+   status:"Contrariada pelo próprio boleto",
+   evid:"O contrato limita a mora a 2% de multa e 1% ao mês de juros. O boleto 97 instrui a cobrança de R$ 72,51 por dia, cerca de 12% ao mês. A própria cláusula invocada para cobrar é descumprida na instrução bancária."},
   {id:"Cláusula Terceira, §2º", txt:"“Qualquer alteração, para mais ou para menos, na quantidade de colaboradores contratados para a prestação dos Serviços poderá acarretar revisão de valores e será expressamente pactuado com a Cliente, por escrito”",
    status:"Ignorada na emissão dos boletos",
    evid:"A 2ª onda teve postos descobertos, faltas e desistências. A revisão de valores nunca foi apresentada: a BeMore emitiu os títulos pelo valor cheio, sem o abatimento acordado e sem entregar a relação de faltas que permitiria apurá-lo. A própria proprietária confirmou por escrito que “se tiver algum desconto atuamos sempre na semana seguinte e finaliza”."},
@@ -418,6 +421,7 @@ const PENALIDADES = [
   {item:"Lucros cessantes pela perda do contrato da Agrícola Famosa", base:"R$ 39.000,00 por mês × 9 parcelas remanescentes = R$ 351.000,00", fund:"Arts. 402 e 403 do Código Civil (o que razoavelmente se deixou de lucrar) · Cláusula Décima Primeira (reparação dos danos diretos)", nat:"Legal + Contratual", quando:"Compensação ou ação judicial"},
   {item:"Inexigibilidade dos boletos emitidos", base:"Valor integral dos títulos emitidos sem o abatimento acordado e sem a relação de faltas da 2ª onda", fund:"Art. 476 do Código Civil (exceção do contrato não cumprido) · Cláusula Terceira, §2º (revisão de valores pactuada por escrito) · Cláusula Sétima, §5º (retenção até comprovação)", nat:"Contratual + Legal", quando:"Imediata: pagamento suspenso"},
   {item:"Protesto indevido: sustação e indenização", base:"Custas de sustação, honorários e dano à imagem decorrente do protesto de título inexigível", fund:"Arts. 186 e 927 do Código Civil · Lei nº 9.492/97 · Súmula 227 do STJ · art. 300 do CPC (tutela de urgência para sustar o protesto)", nat:"Judicial", quando:"Imediata, caso haja apontamento em cartório"},
+  {item:"Revisão dos encargos moratórios cobrados", base:"Mora de R$ 72,51 por dia no boleto 97, equivalente a cerca de 12% ao mês", fund:"Art. 406 do Código Civil c/c art. 161, §1º, do CTN (limite de 1% ao mês) · Cláusula Terceira, §1º, do contrato (multa de 2% e juros de 1% ao mês)", nat:"Contratual + Legal", quando:"Imediata: encargo não aceito"},
   {item:"Juros de mora e atualização monetária", base:"Sobre os valores a ressarcir, desde cada desembolso ou desde a notificação, conforme o caso", fund:"Arts. 389, parágrafo único, 395 e 406 do Código Civil: IPCA e taxa legal, na redação da Lei 14.905/2024", nat:"Legal", quando:"Na liquidação"},
   {item:"Honorários advocatícios e despesas de cobrança", base:"Honorários contratados para a cobrança e custas", fund:"Arts. 389 e 404 do Código Civil", nat:"Legal", quando:"Na liquidação ou em juízo"},
   {item:"Dano à imagem da 75 LAB", base:"Arbitramento judicial: degustadoras acionando a 75 LAB e a Agrícola Famosa, cobrança de salário em grupo com o cliente presente e mensagens que chegaram à diretoria do cliente", fund:"Súmula 227 do STJ (dano moral à pessoa jurídica) · arts. 186 e 927 do Código Civil · Cláusula Quinta (zelar pela reputação da Contratante)", nat:"Judicial", quando:"Via ação judicial"}
@@ -444,12 +448,32 @@ const CONTATOS = [
   {h:"18:24", lado:"BeMore", quem:"Adelita Ribeiro", txt:"eu acabei entrando em reunião e esqueci de te chamar por aqui"}
 ];
 
+/* Títulos emitidos pela BeMore (NFS-e + boletos) */
+const TITULOS = [
+  {doc:"NF-e 00000097", emis:"02/09/2026", venc:"30/09/2026", valor:"R$ 18.129,37", obs:"Valor total do serviço R$ 21.750,90, com retenções de INSS, IRRF e PIS/COFINS/CSLL. Código 06491, fornecimento de mão de obra temporária"},
+  {doc:"Boleto 97/001 (banco 310-7)", emis:"02/09/2026", venc:"30/09/2026", valor:"R$ 18.129,37", obs:"Espécie DM (duplicata mercantil), aceite N. Mora de R$ 72,51 por dia. Campo de abatimento em branco"},
+  {doc:"NF-e 00000099", emis:"02/09/2026", venc:"30/09/2026", valor:"R$ 10.306,14", obs:"Despesas operacionais e benefícios lançados no código 02496, propaganda e publicidade, com ISS de 5%"},
+  {doc:"Boleto 99 (Itaú 341-7)", emis:"02/09/2026", venc:"13/10/2026", valor:"R$ 10.306,14", obs:"Espécie DS, aceite N, reprocessado em 09/10/2026 com vencimento posterior ao da nota. Campo de abatimento em branco"}
+];
+
+/* Vícios apurados nos títulos */
+const VICIOS = [
+  {t:"Emitente diferente da contratada", d:"A minuta contratual analisada tem como contratada a BEMORE ACTION SERVIÇOS DE APOIO LTDA (CNPJ 14.447.666/0001-05). As notas e os boletos foram emitidos pela BEMORE INSIGHT LTDA (CNPJ 61.722.514/0001-45).", f:"Conferir na via assinada: em 16/07/2026 a BeMore informou no grupo que havia alterado a empresa no contrato. Se a contratada for a Action, a Insight é terceira estranha à relação e carece de legitimidade para cobrar."},
+  {t:"A nota descreve o fechamento de outro cliente", d:"A NF-e 97, que lastreia a cobrança de R$ 18.129,37, traz na discriminação: “FECHAMENTO BEMORE TEMPORARIOS FATURAMENTO INTEGRALMEDICA JULHO/AGOSTO 2026 - SALARIOS”.", f:"A duplicata de serviço exige correspondência com o serviço efetivamente prestado ao sacado (Lei nº 5.474/68, art. 20). Uma nota que discrimina o faturamento de outro cliente não comprova a prestação ao projeto da 75 LAB."},
+  {t:"Títulos sem aceite", d:"Os dois boletos registram “Aceite: N”.", f:"Duplicata sem aceite só pode ser protestada ou executada mediante comprovação da efetiva prestação do serviço e do vínculo contratual (Lei nº 5.474/68, arts. 15, II, e 20, §3º). O serviço é contestado e está documentado como parcialmente não prestado."},
+  {t:"Nenhum abatimento aplicado", d:"Nos dois boletos o campo “(-) Desconto / Abatimentos” está em branco. Os títulos cobram o valor cheio de julho e agosto.", f:"Contraria o acordo de encerramento e a Cláusula Terceira, §2º, que condiciona a revisão de valores à alteração na quantidade de colaboradores, pactuada por escrito."},
+  {t:"Encargo moratório abusivo", d:"O boleto 97 instrui: “Após o vencimento cobrar: Mora de R$ 72,51 por dia”, o que equivale a 0,4% ao dia, cerca de 12% ao mês sobre R$ 18.129,37.", f:"Supera em doze vezes o limite de 1% ao mês (art. 406 do Código Civil c/c art. 161, §1º, do CTN) e contraria o próprio contrato, cuja Cláusula Terceira, §1º, prevê multa de 2% e juros de 1% ao mês."},
+  {t:"Espécie e classificação incompatíveis", d:"O boleto 97 foi registrado como DM (duplicata mercantil) para serviço de mão de obra temporária, e a NF-e 99 lançou despesas operacionais e benefícios sob o código de propaganda e publicidade (ISS de 5%).", f:"Vícios formais que se somam à ausência de lastro e reforçam a necessidade de retificação antes de qualquer cobrança."},
+  {t:"Vencimento alterado depois da emissão", d:"A NF-e 99 informa vencimento em 30/09/2026. O boleto correspondente foi reprocessado em 09/10/2026 com vencimento em 13/10/2026.", f:"Alteração unilateral de condição de pagamento, sem anuência da 75 LAB."}
+];
+
 /* Dimensão do prejuízo */
 const PREJUIZO = [
   {item:"Perda do contrato da Agrícola Famosa", valor:"R$ 351.000,00", det:"R$ 39.000,00 por mês × 9 parcelas remanescentes", nat:"Lucros cessantes"},
   {item:"Glosa dos serviços não prestados no 1º ciclo", valor:"10,7% do ciclo", det:"16 dias-degustadora dos 150 contratados, documentados neste dossiê", nat:"Abatimento"},
   {item:"Faltas da 2ª onda", valor:"Não apurado", det:"A BeMore se comprometeu a entregar a relação de faltas para abatimento e não entregou, o que impede a apuração", nat:"Abatimento"},
   {item:"Salários e VT pagos diretamente às degustadoras", valor:"A preencher", det:"Valores pagos pela 75 LAB para evitar a responsabilidade subsidiária, com recibo", nat:"Ressarcimento"},
+  {item:"Títulos emitidos sem abatimento", valor:"R$ 28.435,51", det:"Boletos 97 (R$ 18.129,37) e 99 (R$ 10.306,14), pelo valor cheio de julho e agosto, sem o desconto acordado", nat:"Cobrança contestada"},
   {item:"Materiais adquiridos sem três orçamentos", valor:"R$ 177,43", det:"Lançados nas planilhas de envio de material da BeMore", nat:"Glosa"},
   {item:"Custos de mitigação", valor:"A preencher", det:"Rotas de fiscalização, reposição de materiais e uniformes, logística e gestão de crise", nat:"Danos emergentes"},
   {item:"Dano à imagem da 75 LAB", valor:"Arbitramento judicial", det:"Degustadoras acionando clientes, escalada à diretoria do cliente e eventual protesto indevido", nat:"Judicial"}
