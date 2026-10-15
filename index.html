@@ -313,7 +313,7 @@ footer a{color:#C9CEC2}
       <li><span class="n">80</span><div>ocorrências documentadas, sendo <b>34 críticas</b></div></li>
       <li><span class="n">4</span><div>ciclos semanais <b>sem pagamento integral às degustadoras</b></div></li>
       <li><span class="n">0</span><div>comprovantes de pagamento apresentados pela BeMore</div></li>
-      <li><span class="n">R$ 351 mil</span><div>de prejuízo com a <b>perda do contrato da Agrícola Famosa</b></div></li>
+      <li><span class="n">R$ 351 mil</span><div>de faturamento contratado perdido com a <b>conta da Agrícola Famosa</b>, base do lucro cessante</div></li>
       <li><span class="n">16</span><div>dias-degustadora comprometidos — <b>10,7% do 1º ciclo</b></div></li>
       <li><span class="n">0</span><div>faltas declaradas pela BeMore em <b>todos</b> os relatórios oficiais</div></li>
     </ul>
@@ -458,9 +458,24 @@ footer a{color:#C9CEC2}
       </table>
     </div>
 
-    <div class="card" style="margin-top:20px;border-left:4px solid var(--alta)">
-      <h3>A perda da conta foi comunicada à BeMore no mesmo dia</h3>
-      <p>No dia em que a 75 LAB passou a manhã inteira tentando falar com a proprietária, informou também, às 18h24: <i>“Recebemos hoje a confirmação que perdemos a conta. Por conta do serviço de vocês. Como resolvo isso agora?”</i>. A resposta foi que havia entrado em reunião e esquecido de dar retorno. O nexo entre a execução do serviço e a perda do contrato está registrado por escrito, no mesmo canal em que a BeMore acompanhou toda a operação.</p>
+    <h3 class="tlh">Lucro cessante: por que esse prejuízo é indenizável</h3>
+    <p style="color:var(--ink2);font-size:15px;max-width:74ch;margin:0 0 16px">Lucro cessante é o que a empresa deixou de ganhar porque a outra parte não entregou o que contratou. Não é punição nem estimativa de negócio futuro: é a reparação do ganho que existiria se o serviço tivesse sido prestado como devido. A lei exige três requisitos, e cada um deles está documentado neste dossiê.</p>
+    <div id="lucro"></div>
+
+    <div class="grid2" style="margin-top:22px">
+      <div class="card lime">
+        <h3>Como o valor se mede</h3>
+        <p style="margin-bottom:10px">O prejuízo tem duas camadas, e a distinção importa para que o número resista a questionamento:</p>
+        <ul class="mot">
+          <li><b>Camada 1</b>Faturamento contratado perdido: <b>R$ 351.000,00</b><small>9 parcelas remanescentes × R$ 39.000,00 mensais, valores já contratados com a Agrícola Famosa</small></li>
+          <li><b>Camada 2</b>Lucro cessante: a margem líquida sobre esse faturamento<small>É o valor efetivamente indenizável. Dele se descontam os custos que a 75 LAB deixou de incorrer, entre eles o próprio custo da operação terceirizada</small></li>
+        </ul>
+        <p style="margin-top:12px">As notas da BeMore dão o parâmetro: o ciclo custou <b>R$ 32.057,04</b> contra <b>R$ 39.000,00</b> faturados ao cliente, o que indica margem aproximada de <b>18%</b>. O simulador do resumo macro permite ajustar esse percentual.</p>
+      </div>
+      <div class="card" style="border-left:4px solid var(--alta)">
+        <h3>A perda da conta foi comunicada à BeMore no mesmo dia</h3>
+        <p>No dia em que a 75 LAB passou a manhã inteira tentando falar com a proprietária, informou também, às 18h24: <i>“Recebemos hoje a confirmação que perdemos a conta. Por conta do serviço de vocês. Como resolvo isso agora?”</i>. A resposta foi que havia entrado em reunião e esquecido de dar retorno. O nexo entre a execução do serviço e a perda do contrato está registrado por escrito, no mesmo canal em que a BeMore acompanhou toda a operação, e não foi contestado por ela na ocasião.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -910,6 +925,9 @@ footer a{color:#C9CEC2}
         <div><label for="lqPar">Dias-degustadora parados após 01/09</label><input id="lqPar" type="number" min="0" step="1" value="0" inputmode="numeric"></div>
         <div><label for="lqCus">Custos de mitigação (R$)</label><input id="lqCus" type="number" min="0" step="50" value="0" inputmode="decimal"></div>
         <div><label for="lqIns">Insumos não devolvidos (R$)</label><input id="lqIns" type="number" min="0" step="50" value="0" inputmode="decimal"></div>
+        <div><label for="lqFatMes">Faturamento mensal perdido (R$)</label><input id="lqFatMes" type="number" min="0" step="500" value="39000" inputmode="decimal"></div>
+        <div><label for="lqParc">Parcelas remanescentes</label><input id="lqParc" type="number" min="0" step="1" value="9" inputmode="numeric"></div>
+        <div><label for="lqMarg">Margem líquida do contrato (%)</label><input id="lqMarg" type="number" min="0" max="100" step="1" value="18" inputmode="decimal"></div>
       </div>
       <table class="liq">
         <tr><td>Glosa dos serviços não prestados no 1º ciclo</td><td class="v" id="lq1">—</td></tr>
@@ -918,9 +936,11 @@ footer a{color:#C9CEC2}
         <tr><td>Custos de mitigação</td><td class="v" id="lq4">—</td></tr>
         <tr><td>Insumos e uniformes não devolvidos</td><td class="v" id="lq5">—</td></tr>
         <tr><td>Materiais sem três orçamentos</td><td class="v" id="lq6">—</td></tr>
+        <tr><td><b>Lucro cessante</b> pela perda do contrato da Agrícola Famosa</td><td class="v" id="lq7">—</td></tr>
+        <tr><td style="color:#8A8F81;font-size:13px">Faturamento contratado perdido, base do cálculo acima, não somado ao total</td><td class="v" id="lqFatOut" style="color:#8A8F81;font-size:15px">—</td></tr>
         <tr class="tot"><td>Total a reter e compensar</td><td class="v" id="lqTot">—</td></tr>
       </table>
-      <p class="nota">Ficam fora do total por dependerem de liquidação ou de decisão judicial: juros de mora e atualização monetária, honorários advocatícios e o dano à imagem da 75 LAB. Enquanto não houver acerto, nenhum valor é pago à BeMore (retenção integral).</p>
+      <p class="nota">O lucro cessante entra no total pela margem informada acima. Ficam fora, por dependerem de liquidação ou decisão judicial: juros de mora e atualização monetária, honorários advocatícios e o dano à imagem da 75 LAB. Enquanto não houver acerto, nenhum valor é pago à BeMore (retenção integral).</p>
     </div>
   </div>
 </section>
@@ -1125,6 +1145,10 @@ document.getElementById('payTimeline').innerHTML = PAGAMENTOS.map(p=>{
   return dia + `<div class="it${p.k==='cancel'?' cancel':''}"><div class="top"><span class="lado ${ladoCls[p.lado]}">${p.k==='cancel'?'75 LAB · cancelamento':ladoTxt[p.lado]}</span>${p.h} · ${p.quem}</div>${p.txt}</div>`;
 }).join('');
 
+/* ---------- Lucro cessante ---------- */
+document.getElementById('lucro').innerHTML = LUCRO.map(l=>
+  `<div class="vic" style="border-left-color:var(--teal)"><h4>${l.req}</h4><p>${l.prova}</p><p class="fund">${l.lei}</p></div>`).join('');
+
 /* ---------- Títulos ---------- */
 document.getElementById('titBody').innerHTML = TITULOS.map(t=>
   `<tr><td><b>${t.doc}</b></td><td>${t.emis}</td><td>${t.venc}</td><td class="money red">${t.valor}</td><td>${t.obs}</td></tr>`).join('');
@@ -1149,11 +1173,14 @@ const BRL2 = n => n.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
 function calcLiq(){
   const num = id => parseFloat(document.getElementById(id).value) || 0;
   const dia = num('valor')/150;
-  const linhas = [dia*num('lqCen'), dia*num('lqPar'), num('lqSal'), num('lqCus'), num('lqIns'), 177.43];
+  const fatPerdido = num('lqFatMes') * num('lqParc');
+  const lucro = fatPerdido * num('lqMarg') / 100;
+  const linhas = [dia*num('lqCen'), dia*num('lqPar'), num('lqSal'), num('lqCus'), num('lqIns'), 177.43, lucro];
   linhas.forEach((v,i)=> document.getElementById('lq'+(i+1)).textContent = BRL2(v));
+  document.getElementById('lqFatOut').textContent = BRL2(fatPerdido);
   document.getElementById('lqTot').textContent = BRL2(linhas.reduce((a,b)=>a+b,0));
 }
-['valor','lqCen','lqSal','lqPar','lqCus','lqIns'].forEach(id=>{
+['valor','lqCen','lqSal','lqPar','lqCus','lqIns','lqFatMes','lqParc','lqMarg'].forEach(id=>{
   const el = document.getElementById(id); el.addEventListener('input', calcLiq); el.addEventListener('change', calcLiq);
 });
 calcLiq();

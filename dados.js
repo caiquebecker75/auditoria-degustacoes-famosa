@@ -467,9 +467,20 @@ const VICIOS = [
   {t:"Vencimento alterado depois da emissão", d:"A NF-e 99 informa vencimento em 30/09/2026. O boleto correspondente foi reprocessado em 09/10/2026 com vencimento em 13/10/2026.", f:"Alteração unilateral de condição de pagamento, sem anuência da 75 LAB."}
 ];
 
+/* Lucro cessante: requisitos legais e a prova de cada um */
+const LUCRO = [
+  {req:"1. Inadimplemento comprovado", lei:"Arts. 389 e 475 do Código Civil · Cláusulas Quinta e Décima Primeira do contrato",
+   prova:"80 ocorrências documentadas com data, hora e autoria, sendo 34 críticas: postos descobertos, abandono de posto, relatórios oficiais declarando zero faltas e quatro ciclos semanais sem pagamento das degustadoras."},
+  {req:"2. Nexo causal direto e imediato", lei:"Art. 403 do Código Civil, que exige dano direto e imediato",
+   prova:"A perda foi comunicada à BeMore no mesmo dia e atribuída expressamente à execução do serviço: “Recebemos hoje a confirmação que perdemos a conta. Por conta do serviço de vocês.” A cadeia está registrada: cliente encontrando PDVs vazios, escalada à diretoria da Agrícola Famosa e degustadoras cobrando pagamento na frente do cliente."},
+  {req:"3. Ganho razoavelmente esperado, não hipotético", lei:"Art. 402 do Código Civil: “o que razoavelmente deixou de lucrar”",
+   prova:"Não se trata de expectativa de negócio futuro. Havia contrato em curso com a Agrícola Famosa, com 9 parcelas remanescentes de R$ 39.000,00 mensais. O lucro cessante se mede sobre faturamento já contratado, não sobre projeção."}
+];
+
 /* Dimensão do prejuízo */
 const PREJUIZO = [
-  {item:"Perda do contrato da Agrícola Famosa", valor:"R$ 351.000,00", det:"R$ 39.000,00 por mês × 9 parcelas remanescentes", nat:"Lucros cessantes"},
+  {item:"Faturamento contratado perdido", valor:"R$ 351.000,00", det:"R$ 39.000,00 por mês × 9 parcelas remanescentes da conta Agrícola Famosa", nat:"Base do lucro cessante"},
+  {item:"Lucro cessante", valor:"Margem sobre R$ 351.000,00", det:"Lucro líquido que a 75 LAB deixou de auferir, descontados os custos que deixariam de ser incorridos. Ver o simulador no resumo macro", nat:"Indenizável (art. 402 do CC)"},
   {item:"Glosa dos serviços não prestados no 1º ciclo", valor:"10,7% do ciclo", det:"16 dias-degustadora dos 150 contratados, documentados neste dossiê", nat:"Abatimento"},
   {item:"Faltas da 2ª onda", valor:"Não apurado", det:"A BeMore se comprometeu a entregar a relação de faltas para abatimento e não entregou, o que impede a apuração", nat:"Abatimento"},
   {item:"Salários e VT pagos diretamente às degustadoras", valor:"A preencher", det:"Valores pagos pela 75 LAB para evitar a responsabilidade subsidiária, com recibo", nat:"Ressarcimento"},
