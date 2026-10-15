@@ -301,7 +301,27 @@ const OCORRENCIAS = [
 
   {n:75, data:"2026-08-28", loja:"Grupo com o cliente presente", tipo:"Pagamento", grav:"Crítica", resp:"BeMore",
    fato:"As degustadoras Ariane e Jeni cobram o pagamento em um grupo em que o cliente está presente. A falta de pagamento da BeMore passa a ser exposta diretamente à Agrícola Famosa.",
-   cit:"sei que pode estar acontecendo algo internamente. mas vale dar uma satisfação porque nesse grupo está o cliente..", quem:"Caique Becker (75LAB)", hora:"28/08 12:52", prova:"#cadeia"}
+   cit:"sei que pode estar acontecendo algo internamente. mas vale dar uma satisfação porque nesse grupo está o cliente..", quem:"Caique Becker (75LAB)", hora:"28/08 12:52", prova:"#cadeia"},
+
+  {n:76, data:"2026-09-16", dataLabel:"SET", loja:"Contato direto com a proprietária", tipo:"Comunicação", grav:"Crítica", resp:"BeMore",
+   fato:"Em data de setembro/2026, posterior à notificação extrajudicial de 15/09, a 75 LAB tentou falar com a proprietária da BeMore desde as 07h10. Foram 8 ligações não atendidas entre 09h39 e 09h56. A primeira resposta veio às 10h40, mais de três horas depois.",
+   cit:"O pior adelita é você, proprietária da BEMORE não atender a ligação. E desculpe estou tentando contato com você desde as 07:30", quem:"Caique Becker (75LAB)", hora:"set/2026 09:56", prova:"#cobranca"},
+
+  {n:77, data:"2026-09-16", dataLabel:"SET", loja:"Contato direto com a proprietária", tipo:"Pagamento", grav:"Crítica", resp:"BeMore",
+   fato:"Após um dia inteiro de cobrança, a proprietária afirmou às 18h24 que o pagamento havia sido feito “umas 14 horas”. Nenhum comprovante foi apresentado, nem naquele dia nem depois.",
+   cit:"Caique desculpe a demora foi feito sim! umas 14 horas", quem:"Adelita Ribeiro (BeMore)", hora:"set/2026 18:24", prova:"#cobranca"},
+
+  {n:78, data:"2026-09-16", dataLabel:"SET", loja:"Cliente — Agrícola Famosa", tipo:"Comercial", grav:"Crítica", resp:"BeMore",
+   fato:"No mesmo dia, a 75 LAB comunicou à BeMore a perda da conta da Agrícola Famosa, atribuída diretamente à execução do serviço. A proprietária respondeu que havia esquecido de dar retorno por estar em reunião.",
+   cit:"Recebemos hoje a confirmação que perdemos a conta / Por conta do serviço de vocês / Como resolvo isso agora?", quem:"Caique Becker (75LAB)", hora:"set/2026 18:24", prova:"#cobranca"},
+
+  {n:79, data:"2026-09-16", dataLabel:"SET", loja:"Acordo de encerramento", tipo:"Cobrança", grav:"Alta", resp:"BeMore",
+   fato:"A própria proprietária confirmou por escrito que eventuais descontos são aplicados no fechamento seguinte. É exatamente o abatimento que deveria constar do último título e que não foi aplicado.",
+   cit:"se tiver algum desconto atuamos sempre na semana seguinte / e finaliza / e sim acabou e o fechamento é esta semana", quem:"Adelita Ribeiro (BeMore)", hora:"set/2026 11:40", prova:"#cobranca"},
+
+  {n:80, data:"2026-10-15", loja:"Cobrança", tipo:"Cobrança", grav:"Crítica", resp:"BeMore",
+   fato:"A BeMore emitiu boletos bancários sem autorização da 75 LAB, pelo valor cheio, sem aplicar os abatimentos acordados e sem entregar a relação de faltas da 2ª onda que permitiria apurá-los. Em seguida, sinalizou que levará os títulos a protesto em cartório.",
+   cit:"Acordo descumprido: (1) abater no segundo boleto os valores devidos; (2) entregar a relação de faltas da 2ª onda para abatimento. Nenhum dos dois foi cumprido.", quem:"Registro da 75 LAB", hora:"15/10 — cobrança em curso", prova:"#cobranca"}
 ];
 
 /* Linha do tempo da inadimplência salarial (21/08 a 15/09/2026)
@@ -368,6 +388,12 @@ const CLAUSULAS = [
   {id:"Cláusula Sétima, §5º", txt:"“Fica a Bemore obrigada a enviar, quando solicitado, a situação dos pagamentos... Caso não sejam apresentadas à Cliente as devidas comprovações, os pagamentos poderão ser retidos até que os documentos solicitados sejam enviados”",
    status:"Acionada — notificação de 15/09/2026",
    evid:"Base expressa para o bloqueio integral dos pagamentos à BeMore até a comprovação de quitação de salários e VT de todas as degustadoras que atuaram no projeto. Acionada na notificação extrajudicial de 15/09/2026, com prazo até as 17h."},
+  {id:"Cláusula Terceira, §2º", txt:"“Qualquer alteração, para mais ou para menos, na quantidade de colaboradores contratados para a prestação dos Serviços poderá acarretar revisão de valores e será expressamente pactuado com a Cliente, por escrito”",
+   status:"Ignorada na emissão dos boletos",
+   evid:"A 2ª onda teve postos descobertos, faltas e desistências. A revisão de valores nunca foi apresentada: a BeMore emitiu os títulos pelo valor cheio, sem o abatimento acordado e sem entregar a relação de faltas que permitiria apurá-lo. A própria proprietária confirmou por escrito que “se tiver algum desconto atuamos sempre na semana seguinte e finaliza”."},
+  {id:"Cláusula Décima Sétima", txt:"“As partes, de comum acordo, elegem o foro da justiça comum cível da comarca de Cianorte, Estado do Paraná, para dirimir eventuais litígios decorrentes deste contrato”",
+   status:"Atenção antes de ajuizar",
+   evid:"A minuta analisada elege Cianorte/PR como foro. Confirmar na versão assinada: se mantido, a sustação de protesto e a ação indenizatória podem ter de ser propostas nessa comarca, ainda que o protesto seja apontado em São Paulo. A sustação de urgência, porém, costuma ser pleiteada no foro da praça do protesto."},
   {id:"Lei nº 6.019/1974, art. 5º-A, §5º", txt:"“A empresa contratante é subsidiariamente responsável pelas obrigações trabalhistas referentes ao período em que ocorrer a prestação de serviços”",
    status:"Risco direto para a 75 LAB",
    evid:"O próprio contrato declara ser regido pela Lei 6.019/74 (Cláusula Primeira, §3º). Salário não pago pela BeMore pode ser cobrado da 75 LAB. É o que dá à agência interesse jurídico para pagar diretamente as colaboradoras e se sub-rogar no crédito (art. 346, III, do Código Civil), compensando-o com o que seria devido à BeMore (art. 368)."},
@@ -389,7 +415,42 @@ const PENALIDADES = [
   {item:"Materiais comprados sem três orçamentos", base:"R$ 177,43 lançados nas planilhas de envio de material da BeMore", fund:"Cláusula Quarta, b: três orçamentos obrigatórios, sob pena de não aprovação da despesa", nat:"Contratual", quando:"Não aprovação, imediata"},
   {item:"Custos de mitigação suportados pela 75 LAB", base:"Rotas de fiscalização, reposição de materiais e uniformes, logística e gestão de crise, com comprovantes", fund:"Arts. 389 e 402 do Código Civil (danos emergentes) · Cláusula Décima Primeira", nat:"Legal + Contratual", quando:"Compensação no acerto final"},
   {item:"Insumos e uniformes não devolvidos", base:"Valor de reposição dos itens do Inventário de 17/07/2026 não devolvidos em até 3 dias úteis", fund:"Art. 389 do Código Civil · Cláusula Sétima, §4º", nat:"Legal + Contratual", quando:"Após o prazo de devolução"},
+  {item:"Lucros cessantes pela perda do contrato da Agrícola Famosa", base:"R$ 39.000,00 por mês × 9 parcelas remanescentes = R$ 351.000,00", fund:"Arts. 402 e 403 do Código Civil (o que razoavelmente se deixou de lucrar) · Cláusula Décima Primeira (reparação dos danos diretos)", nat:"Legal + Contratual", quando:"Compensação ou ação judicial"},
+  {item:"Inexigibilidade dos boletos emitidos", base:"Valor integral dos títulos emitidos sem o abatimento acordado e sem a relação de faltas da 2ª onda", fund:"Art. 476 do Código Civil (exceção do contrato não cumprido) · Cláusula Terceira, §2º (revisão de valores pactuada por escrito) · Cláusula Sétima, §5º (retenção até comprovação)", nat:"Contratual + Legal", quando:"Imediata: pagamento suspenso"},
+  {item:"Protesto indevido: sustação e indenização", base:"Custas de sustação, honorários e dano à imagem decorrente do protesto de título inexigível", fund:"Arts. 186 e 927 do Código Civil · Lei nº 9.492/97 · Súmula 227 do STJ · art. 300 do CPC (tutela de urgência para sustar o protesto)", nat:"Judicial", quando:"Imediata, caso haja apontamento em cartório"},
   {item:"Juros de mora e atualização monetária", base:"Sobre os valores a ressarcir, desde cada desembolso ou desde a notificação, conforme o caso", fund:"Arts. 389, parágrafo único, 395 e 406 do Código Civil: IPCA e taxa legal, na redação da Lei 14.905/2024", nat:"Legal", quando:"Na liquidação"},
   {item:"Honorários advocatícios e despesas de cobrança", base:"Honorários contratados para a cobrança e custas", fund:"Arts. 389 e 404 do Código Civil", nat:"Legal", quando:"Na liquidação ou em juízo"},
   {item:"Dano à imagem da 75 LAB", base:"Arbitramento judicial: degustadoras acionando a 75 LAB e a Agrícola Famosa, cobrança de salário em grupo com o cliente presente e mensagens que chegaram à diretoria do cliente", fund:"Súmula 227 do STJ (dano moral à pessoa jurídica) · arts. 186 e 927 do Código Civil · Cláusula Quinta (zelar pela reputação da Contratante)", nat:"Judicial", quando:"Via ação judicial"}
+];
+
+
+/* Conversa direta com a proprietária da BeMore (setembro/2026, após a notificação de 15/09) */
+const CONTATOS = [
+  {h:"07:10", lado:"75LAB", quem:"Caique Becker", txt:"Adelita bom dia. Cadê os comprovantes de pagamento?"},
+  {h:"09:39 às 09:56", lado:"Sistema", quem:"WhatsApp", txt:"8 ligações de voz não atendidas pela proprietária da BeMore"},
+  {h:"09:43", lado:"75LAB", quem:"Caique Becker", txt:"Surreal adelita com todo respeito. Mas eu preciso ser a pessoa a ter que ficar te ligando."},
+  {h:"09:47", lado:"75LAB", quem:"Caique Becker", txt:"É uma falta de respeito o que está acontecendo. Já não temos relação comercial, só quero resolver esse assunto de uma vez por todas. Você me manda uma mensagem falando que foi pago, ninguém me manda qualquer tipo de comprovante fiscal de pagamento, e logo em seguida tenho novamente mais ataques das suas contratadas!"},
+  {h:"09:56", lado:"75LAB", quem:"Caique Becker", txt:"Se eu não tiver uma resposta sua até as 12:00 irei entrar com os itens sinalizados na notificação extra judicial"},
+  {h:"10:40", lado:"BeMore", quem:"Adelita Ribeiro", txt:"Já te chamo / Vou ver quem são"},
+  {h:"11:36", lado:"75LAB", quem:"Caique Becker", txt:"Você resolveu Adelita? Isso era para ter sido resolvido aquele dia já. Você ainda me manda uma mensagem confirmando, me sinto até enganado"},
+  {h:"11:39", lado:"BeMore", quem:"Adelita Ribeiro", txt:"aquele dia foi / o que elas estão reclamando é de semana passada / que será feito esta semana"},
+  {h:"11:39", lado:"75LAB", quem:"Caique Becker", txt:"Cadê os comprovantes? Até agora nada. Magina, era para ter pago tudo. Foi o nosso acordo"},
+  {h:"11:40", lado:"BeMore", quem:"Adelita Ribeiro", txt:"se tiver algum desconto atuamos sempre na semana seguinte / e finaliza / e sim acabou e o fechamento é esta semana"},
+  {h:"11:41", lado:"75LAB", quem:"Caique Becker", txt:"Ou faça o pagamento agora e quite isso de uma vez ou irei fazer o pagamento agora e acabamos a conversa. Não efetuará hoje?"},
+  {h:"11:41", lado:"BeMore", quem:"Adelita Ribeiro", txt:"deixa eu sair da call e ja vejo com o time se ja fecharam a apuracao final"},
+  {h:"12:15", lado:"75LAB", quem:"Caique Becker", txt:"Resolveu?"},
+  {h:"18:24", lado:"BeMore", quem:"Adelita Ribeiro", txt:"Caique desculpe a demora foi feito sim! umas 14 horas", k:"semComprovante"},
+  {h:"18:24", lado:"75LAB", quem:"Caique Becker", txt:"Recebemos hoje a confirmação que perdemos a conta. Por conta do serviço de vocês. Como resolvo isso agora?", k:"perda"},
+  {h:"18:24", lado:"BeMore", quem:"Adelita Ribeiro", txt:"eu acabei entrando em reunião e esqueci de te chamar por aqui"}
+];
+
+/* Dimensão do prejuízo */
+const PREJUIZO = [
+  {item:"Perda do contrato da Agrícola Famosa", valor:"R$ 351.000,00", det:"R$ 39.000,00 por mês × 9 parcelas remanescentes", nat:"Lucros cessantes"},
+  {item:"Glosa dos serviços não prestados no 1º ciclo", valor:"10,7% do ciclo", det:"16 dias-degustadora dos 150 contratados, documentados neste dossiê", nat:"Abatimento"},
+  {item:"Faltas da 2ª onda", valor:"Não apurado", det:"A BeMore se comprometeu a entregar a relação de faltas para abatimento e não entregou, o que impede a apuração", nat:"Abatimento"},
+  {item:"Salários e VT pagos diretamente às degustadoras", valor:"A preencher", det:"Valores pagos pela 75 LAB para evitar a responsabilidade subsidiária, com recibo", nat:"Ressarcimento"},
+  {item:"Materiais adquiridos sem três orçamentos", valor:"R$ 177,43", det:"Lançados nas planilhas de envio de material da BeMore", nat:"Glosa"},
+  {item:"Custos de mitigação", valor:"A preencher", det:"Rotas de fiscalização, reposição de materiais e uniformes, logística e gestão de crise", nat:"Danos emergentes"},
+  {item:"Dano à imagem da 75 LAB", valor:"Arbitramento judicial", det:"Degustadoras acionando clientes, escalada à diretoria do cliente e eventual protesto indevido", nat:"Judicial"}
 ];
